@@ -1,0 +1,34 @@
+{
+  "base_url": "https://angusqaq.github.io/zhi-you-cai-game/",
+  "results": [
+    {
+      "name": "all 78 real narration clips load and decode",
+      "status": "passed",
+      "details": {
+        "count": 78,
+        "totalSeconds": 223.87
+      }
+    },
+    {
+      "name": "all 15 review sentences play their matching real clips; pause/resume/home cleanup",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "life actor action plays full real sentence and advances once after audio/animation",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "train plays full real sentence and advances once after narration/departure",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "single playback channel; no JavaScript or HTTP asset errors",
+      "status": "passed",
+      "details": ""
+    }
+  ],
+  "pronunciationListeningReview": "not an automated speech-recognition or human listening assessment"
+}

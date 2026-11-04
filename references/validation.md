@@ -30,3 +30,9 @@ GitHub runner 的原生音訊測試另發現固定 sleep 對較慢環境不足�
 **GitHub Pages 已成功部署。** 首次成功執行：[Actions 41760276258](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41760276258)，部署提交 `d1f1310b750a083796272bb25ffe51c71d390437`。正式網址 https://angusqaq.github.io/zhi-you-cai-game/ 已實際請求並確認 HTTP 200。
 
 正式網址的瀏覽器、真實音訊與截圖複查交由 `.github/workflows/verify-live.yml` 執行，使用 GitHub runner 的既有公開網站憑證信任，不修改雲端瀏覽器的共用信任設定。結果及關鍵畫面保存在該 Actions 執行的 `live-website-evidence` artifact。
+
+## 正式網址驗證已通過
+
+[Verify live game website 41760814861](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41760814861) 已成功完成。GitHub runner 在正式 HTTPS 網址實際載入及解碼全部 78 段配音，逐句播放 15 句重溫，操作兩款遊戲各一題並確認完整配音與動畫結束後只推進一次；無 JavaScript 或素材 HTTP 錯誤。共 5 項正式站情境全部通過。
+
+另有 105 項正式站資源 HTTP 200 檢查通過；78 段音檔及程式／資料檔的 SHA-256 與提交內容相符。原始結果為 `evidence/live-http-assets.json`、`evidence/live-production-audio-results.json`。正式頁面截圖為 `evidence/live-home-1280.png`、`live-home-1920.png`、`live-life-1920.png`、`live-train-1920.png`，亦已目視檢查。
