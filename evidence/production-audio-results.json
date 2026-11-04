@@ -2,15 +2,20 @@
   "base_url": "http://127.0.0.1:8795/",
   "results": [
     {
-      "name": "all 78 real narration clips load and decode",
+      "name": "all 79 real narration clips load and decode",
       "status": "passed",
       "details": {
-        "count": 78,
-        "totalSeconds": 223.87
+        "count": 79,
+        "totalSeconds": 226.03
       }
     },
     {
       "name": "all 15 review sentences play their matching real clips; pause/resume/home cleanup",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "life choices repeat/change with real 請試一試 narration and no feedback/role icons",
       "status": "passed",
       "details": ""
     },

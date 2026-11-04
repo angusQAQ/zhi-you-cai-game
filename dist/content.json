@@ -239,10 +239,10 @@
       "subject": "雨傘",
       "condition": "打開",
       "result": "可以擋雨",
-      "sentence": "雨傘只有打開，才可以擋雨。",
+      "sentence": "只有雨傘打開，才可以擋雨。",
       "tokens": [
-        "w-b91f367c56",
         "w-ba8bd7c8c9",
+        "w-b91f367c56",
         "w-d57366ca4f",
         "w-ad9464da16",
         "w-9a8d951dcb",
@@ -250,7 +250,7 @@
         "w-eb0d588456"
       ],
       "showLengthHints": true,
-      "audio": "zyc-v1-sentence-eebe3a8e0011",
+      "audio": "zyc-v1-sentence-659e40794f58",
       "frames": 16
     },
     {
@@ -1210,9 +1210,9 @@
       "file": "assets/audio/zyc-v1-word-8299c1d369b4.mp3",
       "voice": "zh-HK-HiuMaanNeural"
     },
-    "zyc-v1-sentence-eebe3a8e0011": {
-      "text": "雨傘只有打開，才可以擋雨。",
-      "file": "assets/audio/zyc-v1-sentence-eebe3a8e0011.mp3",
+    "zyc-v1-sentence-659e40794f58": {
+      "text": "只有雨傘打開，才可以擋雨。",
+      "file": "assets/audio/zyc-v1-sentence-659e40794f58.mp3",
       "voice": "zh-HK-HiuMaanNeural"
     },
     "zyc-v1-word-df3ea25a4369": {
@@ -1289,10 +1289,16 @@
       "text": "答對了！",
       "file": "assets/audio/zyc-v1-feedback-97c6bbf85445.mp3",
       "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-feedback-e7a8ad9d2336": {
+      "text": "請試一試。",
+      "file": "assets/audio/zyc-v1-feedback-e7a8ad9d2336.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
     }
   },
   "feedback": {
     "再試一試。": "zyc-v1-feedback-2489db7a6bae",
-    "答對了！": "zyc-v1-feedback-97c6bbf85445"
+    "答對了！": "zyc-v1-feedback-97c6bbf85445",
+    "請試一試。": "zyc-v1-feedback-e7a8ad9d2336"
   }
 }

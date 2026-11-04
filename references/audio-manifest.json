@@ -495,12 +495,12 @@
     "sha256": "3943afaba04805e11441b682726ab8a9c53fbd5781898baf2ad36556f9543ba5",
     "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
   },
-  "zyc-v1-sentence-eebe3a8e0011": {
-    "text": "雨傘只有打開，才可以擋雨。",
-    "file": "assets/audio/zyc-v1-sentence-eebe3a8e0011.mp3",
+  "zyc-v1-sentence-659e40794f58": {
+    "text": "只有雨傘打開，才可以擋雨。",
+    "file": "assets/audio/zyc-v1-sentence-659e40794f58.mp3",
     "voice": "zh-HK-HiuMaanNeural",
-    "duration": 3.936,
-    "sha256": "559091f2bb1e3207293596dfd6f708abf1e0c73e71aa2a6b73f7c4f7d13e72bf",
+    "duration": 3.984,
+    "sha256": "320b1fbef1518e20a9cfac20fa8d258258bb05bf6d75c52cb7dec84e8942301a",
     "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
   },
   "zyc-v1-word-df3ea25a4369": {
@@ -621,6 +621,14 @@
     "voice": "zh-HK-HiuMaanNeural",
     "duration": 1.944,
     "sha256": "083a86936ab80f622098bc1e6878609b86a32697ca28bf4fdce59d342a6a050e",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-feedback-e7a8ad9d2336": {
+    "text": "請試一試。",
+    "file": "assets/audio/zyc-v1-feedback-e7a8ad9d2336.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.112,
+    "sha256": "93f1c0979010734968021d2f5550861d4002e3f6a0a4f7cb257fc9e2c0c2830b",
     "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
   }
 }

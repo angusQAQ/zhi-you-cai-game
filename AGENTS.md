@@ -6,7 +6,7 @@ Static site: `dist/`. Source of curriculum: `scripts/build_content.py` → `dist
 
 Run `npm run check`, `python3 scripts/check_assets.py`, and relevant real-browser checks. Run `npm run check:release` before any production deployment. Do not bypass missing narration, CUHK checks, image logic checks, or a failing release gate. See `references/validation.md` for current evidence and blockers. Tests must actually execute, not merely report a file-level pass.
 
-For text changes update pictures, Jyutping, audio text/hash IDs and review data together. All complete sentences use「主語＋只有＋條件，＋才＋結果。」. Keep large bold Kai Chinese, Times New Roman toneless Jyutping, full-width punctuation, no countdown, two-person cooperation, teacher navigation, direct freeze on pause, and full reviews.
+For text changes update pictures, Jyutping, audio text/hash IDs and review data together. Complete sentences use「主語＋只有＋條件，＋才＋結果。」except the teacher's latest umbrella correction「只有雨傘打開，才可以擋雨。」. Life choices remain repeatable until the action starts; wrong choices only play「請試一試。」without visual error feedback. Do not display the life success/role icon rows. Keep large bold Kai Chinese, Times New Roman toneless Jyutping, full-width punctuation, no countdown, two-person cooperation, teacher navigation, direct freeze on pause, and full reviews.
 
 Visually inspect every new image for physical logic and character duplication. Distinct frame hashes alone do not establish a correct 16-frame animation. Never substitute a mismatched old recording, a missing image, or a static frame for an unfinished asset. Keep source notices, original fonts, and image proportions.
 

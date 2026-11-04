@@ -52,21 +52,26 @@ with sync_playwright() as p:
      assert el.evaluate('(el)=>el.scrollHeight<=el.clientHeight+1'),el.inner_text()
     if i in [0,5] or kind=='train' and i==3:page.screenshot(path=str(OUT/f'{kind}-{i+1}-{width}.png'))
    record(f'{width}×{height} {kind}: all question layouts and cards fit')
- # Island: every question, retries, action gate, alternation, left/right visual gap.
+ # Island: every option can repeat/change until action, with no visible feedback/role icons.
  page.set_viewport_size({'width':1280,'height':720});start(page,'life')
  for i,q in enumerate(DATA['life']):
   page.locator(f'[data-jump="{i}"]').click()
   assert page.locator('.empty-cell').get_attribute('data-side')==('left' if i<5 else 'right')
   assert '選條件' not in page.locator('main').inner_text() and '選結果' not in page.locator('main').inner_text()
-  wrong=next(id for id in q['options'] if id!=q['correct'])
-  page.locator(f'[data-option="{wrong}"]').click();assert page.locator('.word-card.wrong').count()==1
-  assert page.locator('[data-action="act"]').is_disabled()
-  page.locator(f'[data-option="{q["correct"]}"]').click()
-  assert page.locator('.gap').count()==0 and page.locator('[data-action="act"]').is_enabled()
+  wrong=[id for id in q['options'] if id!=q['correct']]
+  for id in [wrong[0],wrong[0],q['correct'],q['correct'],wrong[1],wrong[0],q['correct']]:
+   page.locator(f'[data-option="{id}"]').click()
+   assert page.locator('[data-option]:enabled').count()==3
+   assert page.locator('.word-card.wrong,.card-mark,.role-label').count()==0
+   assert page.locator('#feedback').inner_text()=='' and page.locator('#feedback svg').count()==0
+   if id==q['correct']:
+    assert page.locator('.gap').count()==0 and page.locator('[data-action="act"]').is_enabled()
+   else:
+    assert page.locator('.gap').count()==1 and page.locator('[data-action="act"]').is_disabled()
   expected=2 if i%2==0 else 1
   assert page.locator('[data-action="act"]').get_attribute('aria-label')==f'同學 {expected} 觸發動作'
   page.wait_for_timeout(100);assert page.locator('[aria-current="step"]').inner_text()==str(i+1)
- record('all 10 life questions: unique answer UI, retry, visual side, role/action gate')
+ record('all 10 life questions: repeated/changing choices, silent visual feedback, hidden role icons, action gate')
  # Real animation frames, direct freeze, controls responsive on pause, and cleanup.
  page.locator('[data-jump="0"]').click();q=DATA['life'][0]
  page.locator(f'[data-option="{q["correct"]}"]').click();page.locator('[data-action="act"]').click();page.wait_for_timeout(700)

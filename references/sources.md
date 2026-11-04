@@ -15,10 +15,12 @@
 
 水樽圖曾重製以移除生成器加入的數字、回復正確圖集比例；書包圖移除桌上另一課本；校巴圖移除重複的已上車人物；果汁圖修正硬幣與投幣口的接觸方向。鑰匙題依使用者要求完全移除，未隨網站發布。
 
-粵語音檔規劃採 Microsoft Edge Read Aloud 的 `zh-HK-HiuMaanNeural`，並非香港中文大學錄音。本次 78 段配音均已生成，音檔文字、識別名稱、時長及 SHA-256 保存在 `references/audio-manifest.json`。
+粵語音檔規劃採 Microsoft Edge Read Aloud 的 `zh-HK-HiuMaanNeural`，並非香港中文大學錄音。目前 79 段配音均已生成，音檔文字、識別名稱、時長及 SHA-256 保存在 `references/audio-manifest.json`。
 
 本輪部署核查補記：「袋」的中大本字讀音列為 `doi6`，詞例包括布袋、手袋，並列出「筆」為配搭點；原暫訂 `doi2` 已改按本字讀音記錄。學生畫面仍顯示無聲調 `doi`。證據見 `references/cuhk-pages/888b.html`。
 
 本輪 UI 按使用者指示直接沿用上述參考版本的完整 `dist/style.css`，原樣存為本專案 `dist/reference-ui.css`；未修改參考專案。`ui-reference-manifest.json` 保存 SHA-256 與適配範圍。首頁／介紹頁沿用原版 `train-station-v1.png`；首頁新背景由 image_gen 產生，提示詞與核查見 `ui-background-generation.json`，原比例顯示，沒有烘焙文字。
 
 粗體標楷體採原版的 font-weight 900、font-synthesis: weight 與文字描邊設定；原教育部字型及「牀」補字檔保持原樣、授權說明保留。
+
+教師最新修訂已重新生成「只有雨傘打開，才可以擋雨。」及「請試一試。」兩段預錄音，仍使用相同香港粵語聲線及速率，按新文字產生雜湊 ID。雨傘情境圖與詞卡粵拼的意思沒有改變，保留原圖與逐字讀音，僅按新句子重排詞卡；舊句音檔已移除。

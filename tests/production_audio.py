@@ -12,6 +12,10 @@ args=parser.parse_args();base=args.base_url.rstrip('/')+'/'
 with urllib.request.urlopen(base+'content.json') as r:data=json.load(r)
 with urllib.request.urlopen(base+'audio-ready.json') as r:ready=json.load(r)
 assert set(ready['files'])=={a['file'] for a in data['audio'].values()}
+umbrella=next(q for q in data['train'] if q['scene']=='umbrella')
+assert umbrella['sentence']=='只有雨傘打開，才可以擋雨。'
+assert ''.join(data['words'][id]['text'] for id in umbrella['tokens'])==umbrella['sentence']
+assert data['audio'][umbrella['audio']]['text']==umbrella['sentence']
 results=[]
 def passed(name,details=''):
  results.append({'name':name,'status':'passed','details':details});print('PASS',name,flush=True)
@@ -31,8 +35,8 @@ with sync_playwright() as p:
  assert 'home-island-background-v1.png' in page.locator('body').evaluate('(el)=>getComputedStyle(el).backgroundImage')
  assert page.locator('body').evaluate('(el)=>getComputedStyle(el).fontWeight')=='900'
  durations=page.evaluate('''async files=>{const out={};for(const file of files){const a=document.createElement('audio');a.preload='metadata';await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('metadata timeout '+file)),20000);a.onloadedmetadata=()=>{clearTimeout(timer);resolve()};a.onerror=()=>{clearTimeout(timer);reject(Error('decode error '+file))};a.src=file;a.load()});if(!Number.isFinite(a.duration)||a.duration<=0)throw Error('invalid duration '+file);out[file]=a.duration;a.removeAttribute('src');a.load()}return out}''',ready['files'])
- assert len(durations)==78
- passed('all 78 real narration clips load and decode',{'count':len(durations),'totalSeconds':round(sum(durations.values()),2)})
+ assert len(durations)==len(data['audio'])
+ passed(f'all {len(durations)} real narration clips load and decode',{'count':len(durations),'totalSeconds':round(sum(durations.values()),2)})
  speaker='window.actualSpeakers[0]'
  for kind in ['life','train']:
   page.locator(f'[data-intro="{kind}"]').click();page.locator('button[data-action="review"]').first.click()
@@ -50,6 +54,16 @@ with sync_playwright() as p:
  passed('all 15 review sentences play their matching real clips; pause/resume/home cleanup')
  # An actual answer must finish before advancement, with default browser autoplay policy.
  page.locator('[data-intro="life"]').click();page.locator('[data-action="start"]').click();q=data['life'][0]
+ wrong=[id for id in q['options'] if id!=q['correct']]
+ for id in [wrong[0],wrong[0],q['correct'],wrong[1]]:
+  page.locator(f'[data-option="{id}"]').click()
+  page.wait_for_function(speaker+'.currentTime>.12 && !'+speaker+'.paused')
+  clip=data['words'][id]['audio'] if id==q['correct'] else data['feedback']['請試一試。']
+  assert page.evaluate(speaker+'.currentSrc').split('/')[-1]==clip+'.mp3'
+  assert page.locator('[data-option]:enabled').count()==3
+  assert page.locator('#feedback').inner_text()=='' and page.locator('#feedback svg,.role-label,.card-mark,.word-card.wrong').count()==0
+  assert page.locator('[data-action="act"]').is_enabled()==(id==q['correct'])
+ passed('life choices repeat/change with real 請試一試 narration and no feedback/role icons')
  page.locator(f'[data-option="{q["correct"]}"]').click();page.locator('[data-action="act"]').click()
  page.wait_for_timeout(3000)
  if durations[data['audio'][q['audio']]['file']]>2:

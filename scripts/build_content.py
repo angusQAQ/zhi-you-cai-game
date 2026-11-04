@@ -13,7 +13,7 @@ raw=[
 ('lift','小美','按下按鈕','可以叫來升降機',['可以刷牙','可以吃餅乾'])]
 trainraw=[
 ('box','我','打開盒蓋','可以拿出盒內的餅乾',['我','只有','打開盒蓋','，','才','可以拿出','盒內的餅乾','。']),
-('umbrella','雨傘','打開','可以擋雨',['雨傘','只有','打開','，','才','可以擋雨','。']),
+('umbrella','雨傘','打開','可以擋雨',['只有','雨傘','打開','，','才','可以擋雨','。']),
 ('glue','小明','打開膠水蓋','可以塗膠水',['小明','只有','打開','膠水蓋','，','才','可以塗膠水','。']),
 ('juice','我','投入硬幣','可以買到果汁',['我','只有','投入硬幣','，','才','可以買到','果汁','。']),
 ('flower','小花','得到水分','可以繼續生長',['小花','只有','得到水分','，','才','可以繼續','生長','。'])]
@@ -54,10 +54,10 @@ for i,(scene,subject,condition,result,tokens) in enumerate(trainraw):
   elif text in ['我','小明']:pic={'kind':'person','key':text}
   else:pic={'kind':'train','scene':scene,'panel':0 if text in [subject,condition,'打開','膠水蓋','投入硬幣','得到水分'] else 1}
   ids.append(word(text,pic))
- sentence=f'{subject}只有{condition}，才{result}。'
+ # Token order is also the canonical sentence, narration and review wording.
+ sentence=''.join(tokens)
  trains.append({'id':'train-'+scene,'scene':scene,'subject':subject,'condition':condition,'result':result,'sentence':sentence,'tokens':ids,'showLengthHints':i<3,'audio':clip(sentence,'sentence'),'frames':16})
-for text in ['再試一試。','答對了！'] : clip(text,'feedback')
-out={'life':levels,'train':trains,'words':words,'audio':audio,'feedback':{t:clip(t,'feedback') for t in ['再試一試。','答對了！']}}
+out={'life':levels,'train':trains,'words':words,'audio':audio,'feedback':{t:clip(t,'feedback') for t in ['再試一試。','答對了！','請試一試。']}}
 (root/'dist/content.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
 if not (root/'dist/audio-ready.json').exists(): (root/'dist/audio-ready.json').write_text('{"files": []}\n')
 used=set(''.join(w['text'] for w in words.values())+''.join(q['sentence'] for q in levels+trains))

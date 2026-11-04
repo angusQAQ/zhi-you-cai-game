@@ -11,20 +11,30 @@ test('10 life questions, five conditions then five results; updated wording',()=
  for(const q of content.life){assert.equal(new Set(q.options).size,3);assert.equal(q.options.filter(id=>id===q.correct).length,1);assert.equal(content.words[q.correct].text,q[q.mode]);assert.equal(q.frames,16);}
  assert.equal(new Set(content.life.map(q=>q.options.indexOf(q.correct))).size,3);
 });
-test('all sentences have subjects, proper punctuation and matching audio/reviews',()=>{
+test('sentences preserve the teacher wording, proper punctuation and matching audio/reviews',()=>{
  for(const q of [...content.life,...content.train]){
-  assert.equal(q.sentence,`${q.subject}只有${q.condition}，才${q.result}。`);assert(!q.sentence.startsWith('只有'));assert.equal(content.audio[q.audio].text,q.sentence);
+  assert.equal(q.sentence,q.scene==='umbrella'?'只有雨傘打開，才可以擋雨。':`${q.subject}只有${q.condition}，才${q.result}。`);assert.equal(content.audio[q.audio].text,q.sentence);
  }
  assert.equal(new Set([...content.life,...content.train].map(q=>q.id)).size,15);
 });
 test('train fixed semantic chunks, seven/eight carriages, independent punctuation',()=>{
  assert.equal(content.train.length,5);assert.deepEqual(content.train.map(q=>q.showLengthHints),[true,true,true,false,false]);
- const expected=[['我','只有','打開盒蓋','，','才','可以拿出','盒內的餅乾','。'],['雨傘','只有','打開','，','才','可以擋雨','。'],['小明','只有','打開','膠水蓋','，','才','可以塗膠水','。'],['我','只有','投入硬幣','，','才','可以買到','果汁','。'],['小花','只有','得到水分','，','才','可以繼續','生長','。']];
+ const expected=[['我','只有','打開盒蓋','，','才','可以拿出','盒內的餅乾','。'],['只有','雨傘','打開','，','才','可以擋雨','。'],['小明','只有','打開','膠水蓋','，','才','可以塗膠水','。'],['我','只有','投入硬幣','，','才','可以買到','果汁','。'],['小花','只有','得到水分','，','才','可以繼續','生長','。']];
  content.train.forEach((q,i)=>{const text=q.tokens.map(id=>content.words[id].text);assert.deepEqual(text,expected[i]);assert.equal(text.join(''),q.sentence);assert.equal(new Set(q.tokens).size,q.tokens.length);});
  for(const w of Object.values(content.words)){assert(!/[1-6]/.test(w.jyutping));if('，。'.includes(w.text)){assert.equal(w.jyutping,'');assert.equal(w.picture,null);}else{assert(w.jyutping);assert(w.picture);}assert.equal(content.audio[w.audio].text,({'，':'逗號','。':'句號'}[w.text]||w.text));}
 });
-test('wrong life choice retries, correct cannot auto-act or be overwritten',()=>{
- const g=newRound('life',0,content),wrong=g.q.options.find(id=>id!==g.q.correct);assert.equal(perform(g),false);assert.equal(choose(g,wrong),false);assert.equal(g.phase,'choosing');assert.equal(perform(g),false);assert.equal(choose(g,g.q.correct),true);assert.equal(g.phase,'selected');assert.equal(choose(g,wrong),null);assert.equal(perform(g),true);assert.equal(perform(g),false);assert.equal(g.phase,'acting');
+test('life choices can repeat and change until action; a later wrong answer disables action',()=>{
+ for(let i=0;i<content.life.length;i++){
+  const g=newRound('life',i,content),wrong=g.q.options.filter(id=>id!==g.q.correct);
+  assert.equal(perform(g),false);assert.equal(choose(g,'foreign'),null);
+  for(const id of [wrong[0],wrong[0],g.q.correct,g.q.correct,wrong[1],wrong[0],g.q.correct]){
+   const correct=id===g.q.correct;assert.equal(choose(g,id),correct);assert.equal(g.selected,id);assert.equal(g.phase,correct?'selected':'choosing');
+   if(!correct)assert.equal(perform(g),false);
+  }
+  g.paused=true;assert.equal(choose(g,wrong[0]),null);assert.equal(perform(g),false);g.paused=false;
+  assert.equal(perform(g),true);assert.equal(choose(g,wrong[0]),null);assert.equal(choose(g,g.q.correct),null);assert.equal(perform(g),false);assert.equal(g.phase,'acting');
+ }
+ assert.equal(content.audio[content.feedback['請試一試。']].text,'請試一試。');
 });
 test('cooperative roles alternate; pause forbids input and requires both completion gates',()=>{
  for(let i=0;i<10;i++){const r=roles(i);assert.notEqual(r.chooser,r.actor);if(i)assert.notEqual(r.chooser,roles(i-1).chooser);}
