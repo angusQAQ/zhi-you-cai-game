@@ -26,7 +26,7 @@ with sync_playwright() as p:
  page=b.new_page(viewport={'width':1280,'height':720});errors=[];bad=[]
  page.on('pageerror',lambda e:errors.append(str(e)))
  page.on('response',lambda r:bad.append(str(r.status)+' '+r.url) if r.status>=400 else None)
- page.add_init_script('''window.actualSpeakers=[];window.audioEnded=[];window.audioStarts=[];const OriginalAudio=window.Audio;window.Audio=function(...args){const a=new OriginalAudio(...args);a.addEventListener('ended',()=>window.audioEnded.push(a.currentSrc));a.addEventListener('play',()=>window.audioStarts.push(a.currentSrc));window.actualSpeakers.push(a);return a;};''')
+ page.add_init_script('''window.actualSpeakers=[];window.audioEnded=[];window.audioPlayRequests=[];const OriginalAudio=window.Audio;window.Audio=function(...args){const a=new OriginalAudio(...args);a.addEventListener('ended',()=>window.audioEnded.push(a.currentSrc));const play=a.play.bind(a);a.play=()=>{window.audioPlayRequests.push(a.getAttribute('src'));return play();};window.actualSpeakers.push(a);return a;};''')
  page.goto(base,wait_until='networkidle')
  homepage_text=page.locator('.home-page').inner_text()
  assert all(t not in homepage_text for t in ['小島中文','小島生活任務','小島句子列車'])
@@ -58,10 +58,11 @@ with sync_playwright() as p:
   page.locator(f'[data-jump="{qi}"]').click();q=data['life'][qi]
   wrong=[id for id in q['options'] if id!=q['correct']]
   for id in q['options']+list(reversed(q['options']))+[wrong[0],wrong[0]]:
-   starts=page.evaluate('window.audioStarts.length')
+   # play() is synchronous; its play event can still be queued from the question.
+   starts=page.evaluate('window.audioPlayRequests.length')
    page.locator(f'[data-option="{id}"]').click()
    page.wait_for_function(speaker+'.currentTime>.12 && !'+speaker+'.paused')
-   assert page.evaluate('window.audioStarts.length')==starts+1,'every click, including repeated choices, starts narration'
+   assert page.evaluate('window.audioPlayRequests.length')==starts+1,('every click, including repeated choices, requests one real playback',qi,id,starts,page.evaluate('window.audioPlayRequests'))
    clip=data['words'][id]['audio']
    assert page.evaluate(speaker+'.currentSrc').split('/')[-1]==clip+'.mp3'
    assert page.locator('[data-option]:enabled').count()==3 and page.locator('[data-action="act"]').is_enabled()
