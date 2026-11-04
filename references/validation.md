@@ -44,3 +44,5 @@ GitHub runner 的原生音訊測試另發現固定 sleep 對較慢環境不足�
 對照同一版本的「一……就……」實際頁面，分別量測生活任務的上方場景／句子面板及下方操作區，以及列車的情境面板、軌道、詞庫。在 1280×720、1920×1080 共 **10 項位置及尺寸對照全部一致**，最大差異 0 像素；原始數據及畫面存於 `evidence/ui-reference-layout-comparison.json` 與 `evidence/ui-*.png`。新句式必需的左右空框、第二人觸發、8／7 節車廂按新題庫保留。
 
 本輪 16 項瀏覽器流程通過，包含所有 15 題、左右空格提示、角色交替、雙觸控拖動、交換／放回、暫停、跳題與重溫；4 項音訊生命週期、5 項正式音檔流程及 9 項核心檢查通過。字型、題庫、配音內容沒有更換。重溫重新遊玩改用原版標頭的「重新開始」按鈕，測試按實際按鈕操作。
+
+本輪 UI 已由 [Check and deploy 41763606197](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41763606197) 成功部署，網站程式提交為 `5df441f1610230aff2db13715b98faf596fcbd02`。[正式網址驗證 41763898103](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41763898103) 在公開 HTTPS 網站通過全部 5 項情境，也確認首頁兩個入口、粗體與新背景、指定文字刪除均已生效。`evidence/live-*.png` 和 `live-production-audio-results.json` 已更新為這次正式站結果，首頁及兩款遊戲畫面已目視檢查。
