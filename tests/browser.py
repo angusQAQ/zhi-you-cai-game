@@ -51,8 +51,16 @@ with sync_playwright() as p:
     for el in cards.all():
      assert el.evaluate('(el)=>el.scrollHeight<=el.clientHeight+1'),el.inner_text()
     if i in [0,5] or kind=='train' and i==3:page.screenshot(path=str(OUT/f'{kind}-{i+1}-{width}.png'))
+    if kind=='life':
+     wrong=next(id for id in q['options'] if id!=q['correct'])
+     page.locator(f'[data-option="{wrong}"]').click()
+     if i in [0,5]:page.screenshot(path=str(OUT/f'life-preview-{i+1}-{width}.png'))
+     page.locator('[data-action="act"]').click()
+     error=page.locator('.submission-error').bounding_box();read=page.locator('.read-controls').bounding_box();copy=page.locator('.life-copy .sentence').bounding_box()
+     assert copy['y']+copy['height']<=error['y']+1 and error['y']+error['height']<=read['y']+1,(width,i,copy,error,read)
+     if i in [0,5]:page.screenshot(path=str(OUT/f'life-submission-error-{i+1}-{width}.png'))
    record(f'{width}×{height} {kind}: all question layouts and cards fit')
- # Island: every option can repeat/change until action, with no visible feedback/role icons.
+ # Island: every choice previews and enables submission; wrong feedback follows submission only.
  page.set_viewport_size({'width':1280,'height':720});start(page,'life')
  for i,q in enumerate(DATA['life']):
   page.locator(f'[data-jump="{i}"]').click()
@@ -62,16 +70,26 @@ with sync_playwright() as p:
   for id in [wrong[0],wrong[0],q['correct'],q['correct'],wrong[1],wrong[0],q['correct']]:
    page.locator(f'[data-option="{id}"]').click()
    assert page.locator('[data-option]:enabled').count()==3
-   assert page.locator('.word-card.wrong,.card-mark,.role-label').count()==0
+   assert page.locator('.word-card.wrong,.card-mark,.role-label,.correct-card').count()==0
    assert page.locator('#feedback').inner_text()=='' and page.locator('#feedback svg').count()==0
-   if id==q['correct']:
-    assert page.locator('.gap').count()==0 and page.locator('[data-action="act"]').is_enabled()
-   else:
-    assert page.locator('.gap').count()==1 and page.locator('[data-action="act"]').is_disabled()
+   assert page.locator('.gap,.empty-cell').count()==0 and page.locator('[data-action="act"]').is_enabled()
+   preview=page.locator('[data-preview]');assert preview.get_attribute('data-preview')==id
+   assert preview.get_attribute('data-side')==('left' if i<5 else 'right')
+   assert preview.locator('svg[role="img"]').count()==1
+   assert DATA['words'][id]['text'] in page.locator('.life-copy .sentence').inner_text()
+   if id!=q['correct']:
+    for attempt in range(2):
+     page.locator('[data-action="act"]').click()
+     assert page.locator('#feedback .submission-error').inner_text()=='請試一試！'
+     assert page.locator('.choice-error .preview-error').is_visible()
+     assert page.locator('.wrong-card .card-mark').is_visible()
+     assert page.locator('[data-preview]').get_attribute('data-preview')==id
+     assert page.locator('[data-option]:enabled').count()==3 and page.locator('[data-action="act"]').is_enabled()
+     assert page.locator('[aria-current="step"]').inner_text()==str(i+1)
   expected=2 if i%2==0 else 1
-  assert page.locator('[data-action="act"]').get_attribute('aria-label')==f'同學 {expected} 觸發動作'
+  assert page.locator('[data-action="act"]').get_attribute('aria-label')==f'同學 {expected} 提交答案'
   page.wait_for_timeout(100);assert page.locator('[aria-current="step"]').inner_text()==str(i+1)
- record('all 10 life questions: repeated/changing choices, silent visual feedback, hidden role icons, action gate')
+ record('all 10 life questions: every image previews, submission grades, clear errors persist, retries clear feedback')
  # Real animation frames, direct freeze, controls responsive on pause, and cleanup.
  page.locator('[data-jump="0"]').click();q=DATA['life'][0]
  page.locator(f'[data-option="{q["correct"]}"]').click();page.locator('[data-action="act"]').click();page.wait_for_timeout(700)

@@ -26,7 +26,7 @@ with sync_playwright() as p:
  page=b.new_page(viewport={'width':1280,'height':720});errors=[];bad=[]
  page.on('pageerror',lambda e:errors.append(str(e)))
  page.on('response',lambda r:bad.append(str(r.status)+' '+r.url) if r.status>=400 else None)
- page.add_init_script('''window.actualSpeakers=[];window.audioEnded=[];const OriginalAudio=window.Audio;window.Audio=function(...args){const a=new OriginalAudio(...args);a.addEventListener('ended',()=>window.audioEnded.push(a.currentSrc));window.actualSpeakers.push(a);return a;};''')
+ page.add_init_script('''window.actualSpeakers=[];window.audioEnded=[];window.audioStarts=[];const OriginalAudio=window.Audio;window.Audio=function(...args){const a=new OriginalAudio(...args);a.addEventListener('ended',()=>window.audioEnded.push(a.currentSrc));a.addEventListener('play',()=>window.audioStarts.push(a.currentSrc));window.actualSpeakers.push(a);return a;};''')
  page.goto(base,wait_until='networkidle')
  homepage_text=page.locator('.home-page').inner_text()
  assert all(t not in homepage_text for t in ['小島中文','小島生活任務','小島句子列車'])
@@ -54,16 +54,36 @@ with sync_playwright() as p:
  passed('all 15 review sentences play their matching real clips; pause/resume/home cleanup')
  # An actual answer must finish before advancement, with default browser autoplay policy.
  page.locator('[data-intro="life"]').click();page.locator('[data-action="start"]').click();q=data['life'][0]
- wrong=[id for id in q['options'] if id!=q['correct']]
- for id in [wrong[0],wrong[0],q['correct'],wrong[1]]:
-  page.locator(f'[data-option="{id}"]').click()
-  page.wait_for_function(speaker+'.currentTime>.12 && !'+speaker+'.paused')
-  clip=data['words'][id]['audio'] if id==q['correct'] else data['feedback']['請試一試。']
-  assert page.evaluate(speaker+'.currentSrc').split('/')[-1]==clip+'.mp3'
-  assert page.locator('[data-option]:enabled').count()==3
-  assert page.locator('#feedback').inner_text()=='' and page.locator('#feedback svg,.role-label,.card-mark,.word-card.wrong').count()==0
-  assert page.locator('[data-action="act"]').is_enabled()==(id==q['correct'])
- passed('life choices repeat/change with real 請試一試 narration and no feedback/role icons')
+ for qi in [0,5]:
+  page.locator(f'[data-jump="{qi}"]').click();q=data['life'][qi]
+  wrong=[id for id in q['options'] if id!=q['correct']]
+  for id in q['options']+list(reversed(q['options']))+[wrong[0],wrong[0]]:
+   starts=page.evaluate('window.audioStarts.length')
+   page.locator(f'[data-option="{id}"]').click()
+   page.wait_for_function(speaker+'.currentTime>.12 && !'+speaker+'.paused')
+   assert page.evaluate('window.audioStarts.length')==starts+1,'every click, including repeated choices, starts narration'
+   clip=data['words'][id]['audio']
+   assert page.evaluate(speaker+'.currentSrc').split('/')[-1]==clip+'.mp3'
+   assert page.locator('[data-option]:enabled').count()==3 and page.locator('[data-action="act"]').is_enabled()
+   assert page.locator('[data-preview]').get_attribute('data-preview')==id
+   assert page.locator('#feedback').inner_text()=='' and page.locator('#feedback svg,.role-label,.card-mark,.word-card.wrong').count()==0
+  for attempt in range(2):
+   page.locator('[data-action="act"]').click()
+   page.wait_for_function(speaker+'.currentTime>.12 && !'+speaker+'.paused')
+   clip=data['feedback']['請試一試。']
+   assert page.evaluate(speaker+'.currentSrc').split('/')[-1]==clip+'.mp3'
+   assert page.locator('.choice-error .preview-error').is_visible()
+   assert page.locator('#feedback .submission-error').inner_text()=='請試一試！'
+   assert page.locator('[data-preview]').get_attribute('data-preview')==wrong[0]
+  if qi==0:
+   page.wait_for_timeout(3300)
+   assert page.locator('[aria-current="step"]').inner_text()=='1','wrong submissions must never advance'
+  if base.startswith('https://') and qi==0:
+   page.screenshot(path=str(ROOT/'evidence/live-life-wrong-submit-1280.png'))
+   page.set_viewport_size({'width':1920,'height':1080});page.screenshot(path=str(ROOT/'evidence/live-life-wrong-submit-1920.png'))
+   page.set_viewport_size({'width':1280,'height':720})
+ passed('every life option click narrates and previews; wrong submissions show clear feedback, speak and stay for retries')
+ page.locator('[data-jump="0"]').click();q=data['life'][0]
  page.locator(f'[data-option="{q["correct"]}"]').click();page.locator('[data-action="act"]').click()
  page.wait_for_timeout(3000)
  if durations[data['audio'][q['audio']]['file']]>2:

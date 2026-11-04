@@ -23,13 +23,15 @@ test('train fixed semantic chunks, seven/eight carriages, independent punctuatio
  content.train.forEach((q,i)=>{const text=q.tokens.map(id=>content.words[id].text);assert.deepEqual(text,expected[i]);assert.equal(text.join(''),q.sentence);assert.equal(new Set(q.tokens).size,q.tokens.length);});
  for(const w of Object.values(content.words)){assert(!/[1-6]/.test(w.jyutping));if('，。'.includes(w.text)){assert.equal(w.jyutping,'');assert.equal(w.picture,null);}else{assert(w.jyutping);assert(w.picture);}assert.equal(content.audio[w.audio].text,({'，':'逗號','。':'句號'}[w.text]||w.text));}
 });
-test('life choices can repeat and change until action; a later wrong answer disables action',()=>{
+test('every life choice previews without grading; wrong submissions retain it for retries and cannot animate',()=>{
  for(let i=0;i<content.life.length;i++){
   const g=newRound('life',i,content),wrong=g.q.options.filter(id=>id!==g.q.correct);
   assert.equal(perform(g),false);assert.equal(choose(g,'foreign'),null);
   for(const id of [wrong[0],wrong[0],g.q.correct,g.q.correct,wrong[1],wrong[0],g.q.correct]){
-   const correct=id===g.q.correct;assert.equal(choose(g,id),correct);assert.equal(g.selected,id);assert.equal(g.phase,correct?'selected':'choosing');
-   if(!correct)assert.equal(perform(g),false);
+   const correct=id===g.q.correct;assert.equal(choose(g,id),correct);assert.equal(g.selected,id);assert.equal(g.phase,'selected');assert.deepEqual(g.wrong,[]);
+   if(!correct){
+    for(let attempt=0;attempt<2;attempt++){assert.equal(perform(g),false);assert.equal(g.selected,id);assert.equal(g.phase,'selected');assert.deepEqual(g.wrong,[id]);assert.equal(g.startedAt,null);assert.equal(g.clock.jobs.length,0);assert.equal(canAdvance(g),false);}
+   }
   }
   g.paused=true;assert.equal(choose(g,wrong[0]),null);assert.equal(perform(g),false);g.paused=false;
   assert.equal(perform(g),true);assert.equal(choose(g,wrong[0]),null);assert.equal(choose(g,g.q.correct),null);assert.equal(perform(g),false);assert.equal(g.phase,'acting');
