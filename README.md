@@ -32,6 +32,8 @@ python3 tests/audio_browser.py
 
 ## 完成配音、核查與部署
 
+診斷證據與具體解決步驟見 [references/network-diagnosis.md](references/network-diagnosis.md)。可執行 `npm run check:network` 區分代理阻擋、TLS 問題與已連到遠端但尚未驗證授權；此指令不修改網路規則。
+
 先在環境設定套用已儲存的四個必要網域：`humanum.arts.cuhk.edu.hk`、`speech.platform.bing.com`、`api.github.com`、`angusqaq.github.io`。這是網路需求，不需在聊天中提供密鑰。
 
 ```sh

@@ -1,0 +1,33 @@
+{
+  "observed_at_hong_kong": "2026-11-04",
+  "runtime": {
+    "spec_revision": "1",
+    "observed_spec_revision": "1",
+    "observations_current": true,
+    "network_mode": "restricted",
+    "network_state": "enforced",
+    "custom_allowed_hosts": []
+  },
+  "draft": {
+    "revision": 3,
+    "custom_allowed_hosts": [
+      "angusqaq.github.io",
+      "api.github.com",
+      "humanum.arts.cuhk.edu.hk",
+      "speech.platform.bing.com"
+    ],
+    "saved": true,
+    "applied_to_runtime": false,
+    "requires_publish": true
+  },
+  "release_check": {
+    "exit_code": 1,
+    "core_tests_passed": 9,
+    "narration_ready": 0,
+    "narration_required": 78,
+    "cuhk_verified": 36,
+    "cuhk_required": 111
+  },
+  "github_api_authorization": "unverified: proxy blocks connection before origin",
+  "pages_deployment": "unverified: API and site blocked before origin"
+}
