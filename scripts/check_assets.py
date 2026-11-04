@@ -15,6 +15,9 @@ def main():
    if len(set(entry.get('frameHashes',[])))!=16:errors.append('Missing distinct frames '+file)
   elif width!=height*2:errors.append('Not two square panels '+file)
   if entry.get('visualReview')!='passed':errors.append('Visual review pending '+file)
+ for file,entry in manifest.items():
+  path=ROOT/'dist'/file
+  if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=entry['sha256']:errors.append('Shared art changed without audit '+file)
  for file in ['assets/education-kai.ttf','assets/kai-variant-7240.woff2','assets/font-source.txt','assets/kai-variant-license.txt','assets/vocab-v1.png','assets/train-engine-16-v1.png','assets/train-carriages-16-v3.png']:
   if not (ROOT/'dist'/file).is_file():errors.append('Missing '+file)
  ready=json.loads((ROOT/'dist/audio-ready.json').read_text())['files'];missing=[]

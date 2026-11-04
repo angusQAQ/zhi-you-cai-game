@@ -1,9 +1,10 @@
 {
-  "passed": 3,
+  "passed": 4,
   "fixture": "isolated six-second tone, never production narration",
   "checks": [
     "native audio pause/resume and both completion gates",
     "mute stops audio and advances once",
-    "jump/home clears audio and stale transitions"
+    "jump/home clears audio and stale transitions",
+    "review voice pause/resume without overlay"
   ]
 }

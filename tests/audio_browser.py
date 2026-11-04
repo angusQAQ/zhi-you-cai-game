@@ -37,5 +37,13 @@ with tempfile.TemporaryDirectory() as folder:
   assert page.evaluate(media+'.paused') and page.evaluate(media+'.getAttribute("src")') is None
   assert page.locator('[data-intro]').count()==2
   print('PASS jump/home clears native audio and leaves no delayed transition')
-  (ROOT/'evidence/audio-browser-results.json').write_text(json.dumps({'passed':3,'fixture':'isolated six-second tone, never production narration','checks':['native audio pause/resume and both completion gates','mute stops audio and advances once','jump/home clears audio and stale transitions']},ensure_ascii=False,indent=2)+'\n')
+  page.locator('[data-intro="life"]').click();page.locator('button[data-action="review"]').first.click()
+  page.locator('[data-audio]').first.click();page.wait_for_timeout(250)
+  page.locator('[data-action="pause"]').click();t=page.evaluate(media+'.currentTime');page.wait_for_timeout(250)
+  assert page.evaluate(media+'.paused') and abs(page.evaluate(media+'.currentTime')-t)<.08
+  assert page.locator('.review-card').count()==10 and page.locator('[role="dialog"]').count()==0
+  page.locator('[data-action="pause"]').click();page.wait_for_timeout(200)
+  assert page.evaluate(media+'.currentTime')>t
+  print('PASS review audio direct freeze/resume without hiding pictures')
+  (ROOT/'evidence/audio-browser-results.json').write_text(json.dumps({'passed':4,'fixture':'isolated six-second tone, never production narration','checks':['native audio pause/resume and both completion gates','mute stops audio and advances once','jump/home clears audio and stale transitions','review voice pause/resume without overlay']},ensure_ascii=False,indent=2)+'\n')
   b.close()
