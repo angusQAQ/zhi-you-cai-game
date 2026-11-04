@@ -54,3 +54,5 @@ GitHub runner 的原生音訊測試另發現固定 sleep 對較慢環境不足�
 雨傘題的正確排列、完整句、重溫及新雜湊配音均為「只有雨傘打開，才可以擋雨。」；圖片意思、字卡粵拼保留，舊句音檔移除。新增提示音後共 79 段預錄音，79/79 通過解碼及音檔文字／雜湊核對，111/111 字音證據不變。
 
 本機已執行並通過 9 項核心、16 項瀏覽器流程、4 項音訊生命週期、6 項真實音檔情境及 `npm run check:release`。瀏覽器逐題驗證重複錯選、重複正選、正選後改錯、再次正選及動作閘門；正式音檔測試確認每次錯選實際播放新的提示音，沒有 JavaScript 或 HTTP 錯誤。兩種解像度的新畫面見 `evidence/life-choice-*.png`，已目視核對。
+
+本輪修訂已由 [部署 41765126246](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41765126246) 成功發布，程式提交 `ec67baf64a3a9793e0d43f7daf1ba3bbecf912f4`。[正式站驗證 41765494118](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41765494118) 全部 6 項情境通過，實際確認重複／更換選項時播放正確提示音、三組角色／成功圖標不顯示、79 段音檔載入及解碼、兩款遊戲配音與動作閘門。`evidence/live-production-audio-results.json`、正式站截圖已更新；另外 7 項更動程式／題庫／配音資源均回傳 HTTP 200，內容 SHA-256 與提交一致，見 `evidence/live-retry-assets.json`。

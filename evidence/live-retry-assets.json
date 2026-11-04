@@ -1,0 +1,41 @@
+{
+  "base_url": "https://angusqaq.github.io/zhi-you-cai-game/",
+  "checked": 7,
+  "results": [
+    {
+      "file": "index.html",
+      "http_status": 200,
+      "content_matches": true
+    },
+    {
+      "file": "app.js",
+      "http_status": 200,
+      "content_matches": true
+    },
+    {
+      "file": "engine.js",
+      "http_status": 200,
+      "content_matches": true
+    },
+    {
+      "file": "content.json",
+      "http_status": 200,
+      "content_matches": true
+    },
+    {
+      "file": "audio-ready.json",
+      "http_status": 200,
+      "content_matches": true
+    },
+    {
+      "file": "assets/audio/zyc-v1-sentence-659e40794f58.mp3",
+      "http_status": 200,
+      "content_matches": true
+    },
+    {
+      "file": "assets/audio/zyc-v1-feedback-e7a8ad9d2336.mp3",
+      "http_status": 200,
+      "content_matches": true
+    }
+  ]
+}
