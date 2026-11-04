@@ -66,3 +66,7 @@ GitHub runner 的原生音訊測試另發現固定 sleep 對較慢環境不足�
 已通過 9 項核心檢查、16 項實際瀏覽器流程、4 項音訊生命週期及 6 項正式音檔情境；79/79 配音與 111/111 字音證據通過發布檢查。測試逐題確認預覽／提交／反覆錯誤／改選清理，以及暫停和完成閘門；音訊實測對前後兩種題型的全部選項與重複點擊逐次核對播放啟動次數與音檔，錯誤提交後等待也不會推進。
 
 1280×720、1920×1080 逐題檢查錯誤提示、句子及重播按鈕不重疊。新畫面為 `evidence/life-preview-*.png` 與 `life-submission-error-*.png`，兩種題型已目視檢查，未更換教學情境圖、題庫、字型或配音。
+
+本輪已由 [部署 41766840630](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41766840630) 成功發布，程式／檢查提交 `d2711d4693cbe7ca130df84f75574f0edc3174b9`。[正式網址驗證 41767232949](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41767232949) 全部 6 項情境通過；在公開 HTTPS 網站實際逐次播放選項、重複同一選項、錯誤提交與重試，確認圖片預覽、醒目錯誤回饋及留在原題，正確提交仍等待聲音和動畫完成才推進。
+
+正式站錯誤畫面為 `evidence/live-life-wrong-submit-1280.png`、`live-life-wrong-submit-1920.png`，已目視核對；正式音檔報告和其他正式站截圖亦已更新。六項程式／樣式／題庫資源 HTTP 200 且 SHA-256 與提交相符，見 `evidence/live-submission-assets.json`。配音測試直接計數同步原生 `play()` 請求並等待實際播放，避免把前段題目尚在派送的非同步 play 事件誤計成選項播放。
