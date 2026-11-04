@@ -16,7 +16,9 @@ results=[]
 def passed(name,details=''):
  results.append({'name':name,'status':'passed','details':details});print('PASS',name,flush=True)
 with sync_playwright() as p:
- b=p.chromium.launch(executable_path=os.environ.get('PLAYWRIGHT_CHROMIUM_EXECUTABLE') or shutil.which('chromium'),headless=True,args=['--no-sandbox'])
+ proxy_url=os.environ.get('HTTPS_PROXY') or os.environ.get('https_proxy')
+ browser_proxy={'server':proxy_url} if base.startswith('https://') and proxy_url else None
+ b=p.chromium.launch(proxy=browser_proxy,executable_path=os.environ.get('PLAYWRIGHT_CHROMIUM_EXECUTABLE') or shutil.which('chromium'),headless=True,args=['--no-sandbox'])
  page=b.new_page(viewport={'width':1280,'height':720});errors=[];bad=[]
  page.on('pageerror',lambda e:errors.append(str(e)))
  page.on('response',lambda r:bad.append(str(r.status)+' '+r.url) if r.status>=400 else None)

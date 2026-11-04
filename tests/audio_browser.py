@@ -24,13 +24,11 @@ with tempfile.TemporaryDirectory() as folder:
   assert page.evaluate(media+'.paused') and abs(page.evaluate(media+'.currentTime')-t)<.08
   page.locator('[data-action="pause"]').click();page.wait_for_timeout(1400)
   assert page.locator('[aria-current="step"]').inner_text()=='1','must wait for six-second audio after animation'
-  page.wait_for_timeout(4500)
-  assert page.locator('[aria-current="step"]').inner_text()=='2'
+  page.wait_for_function("document.querySelector('[aria-current=step]')?.textContent==='2'",timeout=20000)
   print('PASS native audio pause/resume and both audio/animation completion gates')
   # Mute during a currently playing answer must settle its gate exactly once.
   q=data['life'][1];page.locator(f'[data-option="{q["correct"]}"]').click();page.locator('[data-action="act"]').click();page.wait_for_timeout(1800)
-  page.locator('[data-action="sound"]').click();assert page.evaluate(media+'.paused');page.wait_for_timeout(1600)
-  assert page.locator('[aria-current="step"]').inner_text()=='3'
+  page.locator('[data-action="sound"]').click();assert page.evaluate(media+'.paused');page.wait_for_function("document.querySelector('[aria-current=step]')?.textContent==='3'",timeout=10000)
   print('PASS muting mid-answer stops audio and advances once')
   page.locator('[data-action="sound"]').click();page.locator('[data-action="read"]').click();page.wait_for_timeout(200)
   page.locator('[data-jump="7"]').click();page.locator('button[data-action="home"]').click();page.wait_for_timeout(500)
@@ -42,8 +40,8 @@ with tempfile.TemporaryDirectory() as folder:
   page.locator('[data-action="pause"]').click();t=page.evaluate(media+'.currentTime');page.wait_for_timeout(250)
   assert page.evaluate(media+'.paused') and abs(page.evaluate(media+'.currentTime')-t)<.08
   assert page.locator('.review-card').count()==10 and page.locator('[role="dialog"]').count()==0
-  page.locator('[data-action="pause"]').click();page.wait_for_timeout(200)
-  assert page.evaluate(media+'.currentTime')>t
+  page.locator('[data-action="pause"]').click()
+  page.wait_for_function(media+'.currentTime>'+str(t+.1))
   print('PASS review audio direct freeze/resume without hiding pictures')
   (ROOT/'evidence/audio-browser-results.json').write_text(json.dumps({'passed':4,'fixture':'isolated six-second tone, never production narration','checks':['native audio pause/resume and both completion gates','mute stops audio and advances once','jump/home clears audio and stale transitions','review voice pause/resume without overlay']},ensure_ascii=False,indent=2)+'\n')
   b.close()

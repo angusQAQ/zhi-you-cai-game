@@ -23,6 +23,8 @@
 
 原生語音測試證明音檔可播放、對應文字且流程正確，未把自動測試宣稱為人工逐句聽審。尚未在實體電子白板測試硬體；雙觸控是透過 Chromium CDP 的兩個真實同時接點驗證。
 
-已實際嘗試 Pages 建站 API：GitHub 回覆 **403 Resource not accessible by integration**，屬目前 GitHub App 的權限限制，不是舊的雲端代理 CONNECT 403。官方 configure-pages action 說明首次 enablement 要有 administration:write 及 pages:write 的其他 token，不能使用 GITHUB_TOKEN；流程已移除不適用的自動 enablement 選項。需專案管理者在 Pages 設定將 Source 設為 GitHub Actions 一次。
+已實際嘗試 Pages 建站 API：GitHub 回覆 **403 Resource not accessible by integration**，屬目前 GitHub App 的權限限制，不是舊的雲端代理 CONNECT 403。官方 configure-pages action 說明首次 enablement 要有 administration:write 及 pages:write 的其他 token，不能使用 GITHUB_TOKEN；流程已移除不適用的自動 enablement 選項。專案管理者已完成 Pages 設定，API 已確認 build_type=workflow，網址為 https://angusqaq.github.io/zhi-you-cai-game/ 。
+
+GitHub runner 的原生音訊測試另發現固定 sleep 對較慢環境不足；保留「不能提早換題」斷言，將完成檢查改為等待實際題號／音訊狀態。再次在雲端重跑後，接續執行 Actions。
 
 GitHub Pages 部署及正式網址的實際驗證紀錄會在首次成功部署後補上；此段不代表網站已上線。

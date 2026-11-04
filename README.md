@@ -2,7 +2,7 @@
 
 香港小學二年級、語文能力較弱及非華語學生的雙人電子白板教材。專案：<https://github.com/angusQAQ/zhi-you-cai-game>。
 
-固定網址的部署目標為 **https://angusqaq.github.io/zhi-you-cai-game/**。78 段香港粵語預錄音及 111 個字的粵拼核查已備妥，正式發布檢查已通過；首次 Pages 部署需先在 [GitHub Pages 設定](https://github.com/angusQAQ/zhi-you-cai-game/settings/pages) 將 **Build and deployment → Source** 設為 **GitHub Actions**。目前的 GitHub App 連線不具備首次啟用 Pages 所需的權限；完成一次設定後，後續正常提交會自動檢查並更新同一固定網址。正式網址仍須在部署成功後實際驗證。
+固定網址的部署目標為 **https://angusqaq.github.io/zhi-you-cai-game/**。78 段香港粵語預錄音及 111 個字的粵拼核查已備妥，正式發布檢查已通過；GitHub Pages 已設定為 GitHub Actions，線上測試通過後會自動部署。首次正式網址驗證正在進行，完成後會更新本記錄。
 
 ## 內容
 
