@@ -1,0 +1,87 @@
+[
+  {
+    "name": "homepage has exactly two games",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "1280×720 life: all question layouts and cards fit",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "1280×720 train: all question layouts and cards fit",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "1920×1080 life: all question layouts and cards fit",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "1920×1080 train: all question layouts and cards fit",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "all 10 life questions: unique answer UI, retry, visual side, role/action gate",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "life animation frame progression, pause/resume, jump cancels pending advance, restart",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "life final question enters all-10 review",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "train click placement, swap, keyboard select/place/delete",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "two simultaneous native touch drags, independent releases and cleanup",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "same card ownership and touch cancellation preserve bank",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "drag placed card back to bank",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "wrong positions retained; correct train uses changing wheel/steam frames; departure freeze and advance",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "all five train sentences complete and final review contains all five",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "complete reviews accessible from both intro and play",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "no browser exceptions or failed local assets",
+    "status": "passed",
+    "details": ""
+  },
+  {
+    "name": "production voice playback / CUHK new characters / live Pages",
+    "status": "unrun",
+    "details": "Separate release/manual checks; this suite tests progression using explicit mute and does not certify narration pronunciation or live Pages."
+  }
+]

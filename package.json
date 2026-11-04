@@ -1,0 +1,13 @@
+{
+  "name": "zhi-you-cai-game",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "check": "node --check dist/app.js && node --test tests/*.test.mjs",
+    "check:release": "npm run check && python3 scripts/check_assets.py --release",
+    "serve": "python3 -m http.server 8793 --bind 127.0.0.1 --directory dist",
+    "test:browser": "python3 tests/browser.py"
+  }
+}

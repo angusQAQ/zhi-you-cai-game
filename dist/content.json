@@ -1,0 +1,1298 @@
+{
+  "life": [
+    {
+      "id": "life-bottle",
+      "scene": "bottle",
+      "subject": "小明",
+      "condition": "打開水樽蓋",
+      "result": "可以喝水",
+      "mode": "condition",
+      "sentence": "小明只有打開水樽蓋，才可以喝水。",
+      "prompt": "小明只有【？】，才可以喝水。",
+      "options": [
+        "w-b4ffef7017",
+        "w-874af2bf60",
+        "w-2834161fcf"
+      ],
+      "correct": "w-874af2bf60",
+      "audio": "zyc-v1-sentence-1f6a7f36d6b9",
+      "questionAudio": "zyc-v1-question-6b3d7eba4410",
+      "frames": 16,
+      "conditionFrame": 6,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-bag",
+      "scene": "bag",
+      "subject": "小美",
+      "condition": "打開書包",
+      "result": "可以拿出課本",
+      "mode": "condition",
+      "sentence": "小美只有打開書包，才可以拿出課本。",
+      "prompt": "小美只有【？】，才可以拿出課本。",
+      "options": [
+        "w-de919311ad",
+        "w-6320b818bd",
+        "w-cd64301f6c"
+      ],
+      "correct": "w-cd64301f6c",
+      "audio": "zyc-v1-sentence-4e1c7c5dc71e",
+      "questionAudio": "zyc-v1-question-818aa187b42e",
+      "frames": 16,
+      "conditionFrame": 7,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-tap",
+      "scene": "tap",
+      "subject": "我",
+      "condition": "打開水龍頭",
+      "result": "可以洗手",
+      "mode": "condition",
+      "sentence": "我只有打開水龍頭，才可以洗手。",
+      "prompt": "我只有【？】，才可以洗手。",
+      "options": [
+        "w-316c6c76e3",
+        "w-58476ef7cc",
+        "w-07fb68a19d"
+      ],
+      "correct": "w-316c6c76e3",
+      "audio": "zyc-v1-sentence-153087f3f440",
+      "questionAudio": "zyc-v1-question-92e577839e0b",
+      "frames": 16,
+      "conditionFrame": 7,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-ticket",
+      "scene": "ticket",
+      "subject": "我們",
+      "condition": "拿出車票",
+      "result": "可以坐火車",
+      "mode": "condition",
+      "sentence": "我們只有拿出車票，才可以坐火車。",
+      "prompt": "我們只有【？】，才可以坐火車。",
+      "options": [
+        "w-797e5efcdf",
+        "w-e96af342f3",
+        "w-8915429566"
+      ],
+      "correct": "w-8915429566",
+      "audio": "zyc-v1-sentence-73d6ebb86cd0",
+      "questionAudio": "zyc-v1-question-08c82042d89d",
+      "frames": 16,
+      "conditionFrame": 7,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-queue",
+      "scene": "queue",
+      "subject": "小朋友",
+      "condition": "排好隊",
+      "result": "可以上校巴",
+      "mode": "condition",
+      "sentence": "小朋友只有排好隊，才可以上校巴。",
+      "prompt": "小朋友只有【？】，才可以上校巴。",
+      "options": [
+        "w-0e6c9e031a",
+        "w-95d3e6181b",
+        "w-bad5a6f6e6"
+      ],
+      "correct": "w-95d3e6181b",
+      "audio": "zyc-v1-sentence-951af72ed91a",
+      "questionAudio": "zyc-v1-question-35bd921ae2b0",
+      "frames": 16,
+      "conditionFrame": 5,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-lamp",
+      "scene": "lamp",
+      "subject": "小明",
+      "condition": "按下開關",
+      "result": "可以開燈",
+      "mode": "result",
+      "sentence": "小明只有按下開關，才可以開燈。",
+      "prompt": "小明只有按下開關，才【？】。",
+      "options": [
+        "w-e06d2adab7",
+        "w-80f4cc39c4",
+        "w-706c96c06d"
+      ],
+      "correct": "w-e06d2adab7",
+      "audio": "zyc-v1-sentence-eceb172a58c6",
+      "questionAudio": "zyc-v1-question-b87122169298",
+      "frames": 16,
+      "conditionFrame": 6,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-milk",
+      "scene": "milk",
+      "subject": "小美",
+      "condition": "打開雪櫃門",
+      "result": "可以拿出牛奶",
+      "mode": "result",
+      "sentence": "小美只有打開雪櫃門，才可以拿出牛奶。",
+      "prompt": "小美只有打開雪櫃門，才【？】。",
+      "options": [
+        "w-8a97c342d8",
+        "w-22989584f2",
+        "w-0de6800b77"
+      ],
+      "correct": "w-22989584f2",
+      "audio": "zyc-v1-sentence-8231629cbe65",
+      "questionAudio": "zyc-v1-question-0c6e2be3b5d5",
+      "frames": 16,
+      "conditionFrame": 8,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-pencil",
+      "scene": "pencil",
+      "subject": "我",
+      "condition": "打開筆袋",
+      "result": "可以拿出橡皮擦",
+      "mode": "result",
+      "sentence": "我只有打開筆袋，才可以拿出橡皮擦。",
+      "prompt": "我只有打開筆袋，才【？】。",
+      "options": [
+        "w-a581c66c95",
+        "w-51a92ad624",
+        "w-8dbf374084"
+      ],
+      "correct": "w-a581c66c95",
+      "audio": "zyc-v1-sentence-90f4078435b4",
+      "questionAudio": "zyc-v1-question-35ce72619a23",
+      "frames": 16,
+      "conditionFrame": 8,
+      "resultFrame": 15
+    },
+    {
+      "id": "life-post",
+      "scene": "post",
+      "subject": "小明",
+      "condition": "貼上郵票",
+      "result": "可以寄出這封信",
+      "mode": "result",
+      "sentence": "小明只有貼上郵票，才可以寄出這封信。",
+      "prompt": "小明只有貼上郵票，才【？】。",
+      "options": [
+        "w-5e078dd434",
+        "w-336de6cd2b",
+        "w-98ec515fd6"
+      ],
+      "correct": "w-98ec515fd6",
+      "audio": "zyc-v1-sentence-abe56d71001b",
+      "questionAudio": "zyc-v1-question-1e0bc33e8d0e",
+      "frames": 16,
+      "conditionFrame": 7,
+      "resultFrame": 12
+    },
+    {
+      "id": "life-lift",
+      "scene": "lift",
+      "subject": "小美",
+      "condition": "按下按鈕",
+      "result": "可以叫來升降機",
+      "mode": "result",
+      "sentence": "小美只有按下按鈕，才可以叫來升降機。",
+      "prompt": "小美只有按下按鈕，才【？】。",
+      "options": [
+        "w-842523e23c",
+        "w-ff7d69828d",
+        "w-06efca4214"
+      ],
+      "correct": "w-ff7d69828d",
+      "audio": "zyc-v1-sentence-14cf320344bf",
+      "questionAudio": "zyc-v1-question-e24a20292085",
+      "frames": 16,
+      "conditionFrame": 6,
+      "resultFrame": 15
+    }
+  ],
+  "train": [
+    {
+      "id": "train-box",
+      "scene": "box",
+      "subject": "我",
+      "condition": "打開盒蓋",
+      "result": "可以拿出盒內的餅乾",
+      "sentence": "我只有打開盒蓋，才可以拿出盒內的餅乾。",
+      "tokens": [
+        "w-b70bb4acc0",
+        "w-ba8bd7c8c9",
+        "w-e60543375c",
+        "w-ad9464da16",
+        "w-9a8d951dcb",
+        "w-f9cb4b4599",
+        "w-0c34adc946",
+        "w-eb0d588456"
+      ],
+      "showLengthHints": true,
+      "audio": "zyc-v1-sentence-861286ec192c",
+      "frames": 16
+    },
+    {
+      "id": "train-umbrella",
+      "scene": "umbrella",
+      "subject": "雨傘",
+      "condition": "打開",
+      "result": "可以擋雨",
+      "sentence": "雨傘只有打開，才可以擋雨。",
+      "tokens": [
+        "w-b91f367c56",
+        "w-ba8bd7c8c9",
+        "w-d57366ca4f",
+        "w-ad9464da16",
+        "w-9a8d951dcb",
+        "w-8299c1d369",
+        "w-eb0d588456"
+      ],
+      "showLengthHints": true,
+      "audio": "zyc-v1-sentence-eebe3a8e0011",
+      "frames": 16
+    },
+    {
+      "id": "train-glue",
+      "scene": "glue",
+      "subject": "小明",
+      "condition": "打開膠水蓋",
+      "result": "可以塗膠水",
+      "sentence": "小明只有打開膠水蓋，才可以塗膠水。",
+      "tokens": [
+        "w-df3ea25a43",
+        "w-ba8bd7c8c9",
+        "w-d57366ca4f",
+        "w-8a3aa15642",
+        "w-ad9464da16",
+        "w-9a8d951dcb",
+        "w-4530617b10",
+        "w-eb0d588456"
+      ],
+      "showLengthHints": true,
+      "audio": "zyc-v1-sentence-ff05b1b69160",
+      "frames": 16
+    },
+    {
+      "id": "train-juice",
+      "scene": "juice",
+      "subject": "我",
+      "condition": "投入硬幣",
+      "result": "可以買到果汁",
+      "sentence": "我只有投入硬幣，才可以買到果汁。",
+      "tokens": [
+        "w-b70bb4acc0",
+        "w-ba8bd7c8c9",
+        "w-bd0bb89a4d",
+        "w-ad9464da16",
+        "w-9a8d951dcb",
+        "w-89625d7d9e",
+        "w-64c25f038c",
+        "w-eb0d588456"
+      ],
+      "showLengthHints": false,
+      "audio": "zyc-v1-sentence-10d6b315f174",
+      "frames": 16
+    },
+    {
+      "id": "train-flower",
+      "scene": "flower",
+      "subject": "小花",
+      "condition": "得到水分",
+      "result": "可以繼續生長",
+      "sentence": "小花只有得到水分，才可以繼續生長。",
+      "tokens": [
+        "w-142272c44d",
+        "w-ba8bd7c8c9",
+        "w-504a83a844",
+        "w-ad9464da16",
+        "w-9a8d951dcb",
+        "w-7ae86f47ad",
+        "w-dc8937308c",
+        "w-eb0d588456"
+      ],
+      "showLengthHints": false,
+      "audio": "zyc-v1-sentence-058558b78a9d",
+      "frames": 16
+    }
+  ],
+  "words": {
+    "w-b4ffef7017": {
+      "id": "w-b4ffef7017",
+      "text": "刷牙",
+      "jyutpingTones": "caat3 ngaa4",
+      "jyutping": "caat ngaa",
+      "picture": {
+        "kind": "vocab",
+        "key": "刷牙"
+      },
+      "audio": "zyc-v1-word-b4ffef701723"
+    },
+    "w-2834161fcf": {
+      "id": "w-2834161fcf",
+      "text": "拍球",
+      "jyutpingTones": "paak3 kau4",
+      "jyutping": "paak kau",
+      "picture": {
+        "kind": "vocab",
+        "key": "拍球"
+      },
+      "audio": "zyc-v1-word-2834161fcf62"
+    },
+    "w-874af2bf60": {
+      "id": "w-874af2bf60",
+      "text": "打開水樽蓋",
+      "jyutpingTones": "daa2 hoi1 seoi2 zeon1 goi3",
+      "jyutping": "daa hoi seoi zeon goi",
+      "picture": {
+        "kind": "scene",
+        "scene": "bottle",
+        "frame": 6
+      },
+      "audio": "zyc-v1-word-874af2bf6005"
+    },
+    "w-de919311ad": {
+      "id": "w-de919311ad",
+      "text": "洗手",
+      "jyutpingTones": "sai2 sau2",
+      "jyutping": "sai sau",
+      "picture": {
+        "kind": "vocab",
+        "key": "洗手"
+      },
+      "audio": "zyc-v1-word-de919311adf8"
+    },
+    "w-6320b818bd": {
+      "id": "w-6320b818bd",
+      "text": "跳繩",
+      "jyutpingTones": "tiu3 sing4",
+      "jyutping": "tiu sing",
+      "picture": {
+        "kind": "vocab",
+        "key": "跳繩"
+      },
+      "audio": "zyc-v1-word-6320b818bdf7"
+    },
+    "w-cd64301f6c": {
+      "id": "w-cd64301f6c",
+      "text": "打開書包",
+      "jyutpingTones": "daa2 hoi1 syu1 baau1",
+      "jyutping": "daa hoi syu baau",
+      "picture": {
+        "kind": "scene",
+        "scene": "bag",
+        "frame": 7
+      },
+      "audio": "zyc-v1-word-cd64301f6c9f"
+    },
+    "w-58476ef7cc": {
+      "id": "w-58476ef7cc",
+      "text": "畫畫",
+      "jyutpingTones": "waa2 waa2",
+      "jyutping": "waa waa",
+      "picture": {
+        "kind": "vocab",
+        "key": "畫畫"
+      },
+      "audio": "zyc-v1-word-58476ef7cca0"
+    },
+    "w-07fb68a19d": {
+      "id": "w-07fb68a19d",
+      "text": "踢球",
+      "jyutpingTones": "tek3 kau4",
+      "jyutping": "tek kau",
+      "picture": {
+        "kind": "vocab",
+        "key": "踢球"
+      },
+      "audio": "zyc-v1-word-07fb68a19df0"
+    },
+    "w-316c6c76e3": {
+      "id": "w-316c6c76e3",
+      "text": "打開水龍頭",
+      "jyutpingTones": "daa2 hoi1 seoi2 lung4 tau4",
+      "jyutping": "daa hoi seoi lung tau",
+      "picture": {
+        "kind": "scene",
+        "scene": "tap",
+        "frame": 7
+      },
+      "audio": "zyc-v1-word-316c6c76e382"
+    },
+    "w-797e5efcdf": {
+      "id": "w-797e5efcdf",
+      "text": "梳頭",
+      "jyutpingTones": "so1 tau4",
+      "jyutping": "so tau",
+      "picture": {
+        "kind": "vocab",
+        "key": "梳頭"
+      },
+      "audio": "zyc-v1-word-797e5efcdf2e"
+    },
+    "w-e96af342f3": {
+      "id": "w-e96af342f3",
+      "text": "掃地",
+      "jyutpingTones": "sou3 dei6",
+      "jyutping": "sou dei",
+      "picture": {
+        "kind": "vocab",
+        "key": "掃地"
+      },
+      "audio": "zyc-v1-word-e96af342f3d1"
+    },
+    "w-8915429566": {
+      "id": "w-8915429566",
+      "text": "拿出車票",
+      "jyutpingTones": "naa4 ceot1 ce1 piu3",
+      "jyutping": "naa ceot ce piu",
+      "picture": {
+        "kind": "scene",
+        "scene": "ticket",
+        "frame": 7
+      },
+      "audio": "zyc-v1-word-891542956644"
+    },
+    "w-0e6c9e031a": {
+      "id": "w-0e6c9e031a",
+      "text": "吃雪糕",
+      "jyutpingTones": "hek3 syut3 gou1",
+      "jyutping": "hek syut gou",
+      "picture": {
+        "kind": "vocab",
+        "key": "吃雪糕"
+      },
+      "audio": "zyc-v1-word-0e6c9e031ae6"
+    },
+    "w-bad5a6f6e6": {
+      "id": "w-bad5a6f6e6",
+      "text": "畫圖畫",
+      "jyutpingTones": "waa2 tou4 waa2",
+      "jyutping": "waa tou waa",
+      "picture": {
+        "kind": "vocab",
+        "key": "畫圖畫"
+      },
+      "audio": "zyc-v1-word-bad5a6f6e654"
+    },
+    "w-95d3e6181b": {
+      "id": "w-95d3e6181b",
+      "text": "排好隊",
+      "jyutpingTones": "paai4 hou2 deoi6",
+      "jyutping": "paai hou deoi",
+      "picture": {
+        "kind": "scene",
+        "scene": "queue",
+        "frame": 5
+      },
+      "audio": "zyc-v1-word-95d3e6181be8"
+    },
+    "w-80f4cc39c4": {
+      "id": "w-80f4cc39c4",
+      "text": "可以踢球",
+      "jyutpingTones": "ho2 ji5 tek3 kau4",
+      "jyutping": "ho ji tek kau",
+      "picture": {
+        "kind": "vocab",
+        "key": "踢球"
+      },
+      "audio": "zyc-v1-word-80f4cc39c4c1"
+    },
+    "w-706c96c06d": {
+      "id": "w-706c96c06d",
+      "text": "可以吃香蕉",
+      "jyutpingTones": "ho2 ji5 hek3 hoeng1 ziu1",
+      "jyutping": "ho ji hek hoeng ziu",
+      "picture": {
+        "kind": "vocab",
+        "key": "吃香蕉"
+      },
+      "audio": "zyc-v1-word-706c96c06d5f"
+    },
+    "w-e06d2adab7": {
+      "id": "w-e06d2adab7",
+      "text": "可以開燈",
+      "jyutpingTones": "ho2 ji5 hoi1 dang1",
+      "jyutping": "ho ji hoi dang",
+      "picture": {
+        "kind": "scene",
+        "scene": "lamp",
+        "frame": 15
+      },
+      "audio": "zyc-v1-word-e06d2adab759"
+    },
+    "w-8a97c342d8": {
+      "id": "w-8a97c342d8",
+      "text": "可以跳繩",
+      "jyutpingTones": "ho2 ji5 tiu3 sing4",
+      "jyutping": "ho ji tiu sing",
+      "picture": {
+        "kind": "vocab",
+        "key": "跳繩"
+      },
+      "audio": "zyc-v1-word-8a97c342d8bf"
+    },
+    "w-0de6800b77": {
+      "id": "w-0de6800b77",
+      "text": "可以梳頭",
+      "jyutpingTones": "ho2 ji5 so1 tau4",
+      "jyutping": "ho ji so tau",
+      "picture": {
+        "kind": "vocab",
+        "key": "梳頭"
+      },
+      "audio": "zyc-v1-word-0de6800b7751"
+    },
+    "w-22989584f2": {
+      "id": "w-22989584f2",
+      "text": "可以拿出牛奶",
+      "jyutpingTones": "ho2 ji5 naa4 ceot1 ngau4 naai5",
+      "jyutping": "ho ji naa ceot ngau naai",
+      "picture": {
+        "kind": "scene",
+        "scene": "milk",
+        "frame": 15
+      },
+      "audio": "zyc-v1-word-22989584f2ea"
+    },
+    "w-51a92ad624": {
+      "id": "w-51a92ad624",
+      "text": "可以游泳",
+      "jyutpingTones": "ho2 ji5 jau4 wing6",
+      "jyutping": "ho ji jau wing",
+      "picture": {
+        "kind": "vocab",
+        "key": "游泳"
+      },
+      "audio": "zyc-v1-word-51a92ad624f6"
+    },
+    "w-8dbf374084": {
+      "id": "w-8dbf374084",
+      "text": "可以吃西瓜",
+      "jyutpingTones": "ho2 ji5 hek3 sai1 gwaa1",
+      "jyutping": "ho ji hek sai gwaa",
+      "picture": {
+        "kind": "vocab",
+        "key": "吃西瓜"
+      },
+      "audio": "zyc-v1-word-8dbf37408438"
+    },
+    "w-a581c66c95": {
+      "id": "w-a581c66c95",
+      "text": "可以拿出橡皮擦",
+      "jyutpingTones": "ho2 ji5 naa4 ceot1 zoeng6 pei4 caat3",
+      "jyutping": "ho ji naa ceot zoeng pei caat",
+      "picture": {
+        "kind": "scene",
+        "scene": "pencil",
+        "frame": 15
+      },
+      "audio": "zyc-v1-word-a581c66c9507"
+    },
+    "w-5e078dd434": {
+      "id": "w-5e078dd434",
+      "text": "可以洗臉",
+      "jyutpingTones": "ho2 ji5 sai2 lim5",
+      "jyutping": "ho ji sai lim",
+      "picture": {
+        "kind": "vocab",
+        "key": "洗臉"
+      },
+      "audio": "zyc-v1-word-5e078dd4344b"
+    },
+    "w-336de6cd2b": {
+      "id": "w-336de6cd2b",
+      "text": "可以踢足球",
+      "jyutpingTones": "ho2 ji5 tek3 zuk1 kau4",
+      "jyutping": "ho ji tek zuk kau",
+      "picture": {
+        "kind": "vocab",
+        "key": "踢足球"
+      },
+      "audio": "zyc-v1-word-336de6cd2b98"
+    },
+    "w-98ec515fd6": {
+      "id": "w-98ec515fd6",
+      "text": "可以寄出這封信",
+      "jyutpingTones": "ho2 ji5 gei3 ceot1 ze5 fung1 seon3",
+      "jyutping": "ho ji gei ceot ze fung seon",
+      "picture": {
+        "kind": "scene",
+        "scene": "post",
+        "frame": 12
+      },
+      "audio": "zyc-v1-word-98ec515fd6d2"
+    },
+    "w-842523e23c": {
+      "id": "w-842523e23c",
+      "text": "可以刷牙",
+      "jyutpingTones": "ho2 ji5 caat3 ngaa4",
+      "jyutping": "ho ji caat ngaa",
+      "picture": {
+        "kind": "vocab",
+        "key": "刷牙"
+      },
+      "audio": "zyc-v1-word-842523e23c8d"
+    },
+    "w-06efca4214": {
+      "id": "w-06efca4214",
+      "text": "可以吃餅乾",
+      "jyutpingTones": "ho2 ji5 hek3 beng2 gon1",
+      "jyutping": "ho ji hek beng gon",
+      "picture": {
+        "kind": "vocab",
+        "key": "吃餅乾"
+      },
+      "audio": "zyc-v1-word-06efca4214be"
+    },
+    "w-ff7d69828d": {
+      "id": "w-ff7d69828d",
+      "text": "可以叫來升降機",
+      "jyutpingTones": "ho2 ji5 giu3 loi4 sing1 gong3 gei1",
+      "jyutping": "ho ji giu loi sing gong gei",
+      "picture": {
+        "kind": "scene",
+        "scene": "lift",
+        "frame": 15
+      },
+      "audio": "zyc-v1-word-ff7d69828d91"
+    },
+    "w-b70bb4acc0": {
+      "id": "w-b70bb4acc0",
+      "text": "我",
+      "jyutpingTones": "ngo5",
+      "jyutping": "ngo",
+      "picture": {
+        "kind": "person",
+        "key": "我"
+      },
+      "audio": "zyc-v1-word-b70bb4acc048"
+    },
+    "w-ba8bd7c8c9": {
+      "id": "w-ba8bd7c8c9",
+      "text": "只有",
+      "jyutpingTones": "zi2 jau5",
+      "jyutping": "zi jau",
+      "picture": {
+        "kind": "relation",
+        "key": "只有"
+      },
+      "audio": "zyc-v1-word-ba8bd7c8c974"
+    },
+    "w-e60543375c": {
+      "id": "w-e60543375c",
+      "text": "打開盒蓋",
+      "jyutpingTones": "daa2 hoi1 hap6 goi3",
+      "jyutping": "daa hoi hap goi",
+      "picture": {
+        "kind": "train",
+        "scene": "box",
+        "panel": 0
+      },
+      "audio": "zyc-v1-word-e60543375cb9"
+    },
+    "w-ad9464da16": {
+      "id": "w-ad9464da16",
+      "text": "，",
+      "jyutpingTones": "",
+      "jyutping": "",
+      "picture": null,
+      "audio": "zyc-v1-word-b6011fd58387"
+    },
+    "w-9a8d951dcb": {
+      "id": "w-9a8d951dcb",
+      "text": "才",
+      "jyutpingTones": "coi4",
+      "jyutping": "coi",
+      "picture": {
+        "kind": "relation",
+        "key": "才"
+      },
+      "audio": "zyc-v1-word-9a8d951dcb60"
+    },
+    "w-f9cb4b4599": {
+      "id": "w-f9cb4b4599",
+      "text": "可以拿出",
+      "jyutpingTones": "ho2 ji5 naa4 ceot1",
+      "jyutping": "ho ji naa ceot",
+      "picture": {
+        "kind": "train",
+        "scene": "box",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-f9cb4b45994e"
+    },
+    "w-0c34adc946": {
+      "id": "w-0c34adc946",
+      "text": "盒內的餅乾",
+      "jyutpingTones": "hap6 noi6 dik1 beng2 gon1",
+      "jyutping": "hap noi dik beng gon",
+      "picture": {
+        "kind": "train",
+        "scene": "box",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-0c34adc9460a"
+    },
+    "w-eb0d588456": {
+      "id": "w-eb0d588456",
+      "text": "。",
+      "jyutpingTones": "",
+      "jyutping": "",
+      "picture": null,
+      "audio": "zyc-v1-word-351dcac4facb"
+    },
+    "w-b91f367c56": {
+      "id": "w-b91f367c56",
+      "text": "雨傘",
+      "jyutpingTones": "jyu5 saan3",
+      "jyutping": "jyu saan",
+      "picture": {
+        "kind": "train",
+        "scene": "umbrella",
+        "panel": 0
+      },
+      "audio": "zyc-v1-word-b91f367c5690"
+    },
+    "w-d57366ca4f": {
+      "id": "w-d57366ca4f",
+      "text": "打開",
+      "jyutpingTones": "daa2 hoi1",
+      "jyutping": "daa hoi",
+      "picture": {
+        "kind": "train",
+        "scene": "umbrella",
+        "panel": 0
+      },
+      "audio": "zyc-v1-word-d57366ca4f4f"
+    },
+    "w-8299c1d369": {
+      "id": "w-8299c1d369",
+      "text": "可以擋雨",
+      "jyutpingTones": "ho2 ji5 dong2 jyu5",
+      "jyutping": "ho ji dong jyu",
+      "picture": {
+        "kind": "train",
+        "scene": "umbrella",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-8299c1d369b4"
+    },
+    "w-df3ea25a43": {
+      "id": "w-df3ea25a43",
+      "text": "小明",
+      "jyutpingTones": "siu2 ming4",
+      "jyutping": "siu ming",
+      "picture": {
+        "kind": "person",
+        "key": "小明"
+      },
+      "audio": "zyc-v1-word-df3ea25a4369"
+    },
+    "w-8a3aa15642": {
+      "id": "w-8a3aa15642",
+      "text": "膠水蓋",
+      "jyutpingTones": "gaau1 seoi2 goi3",
+      "jyutping": "gaau seoi goi",
+      "picture": {
+        "kind": "train",
+        "scene": "glue",
+        "panel": 0
+      },
+      "audio": "zyc-v1-word-8a3aa156426f"
+    },
+    "w-4530617b10": {
+      "id": "w-4530617b10",
+      "text": "可以塗膠水",
+      "jyutpingTones": "ho2 ji5 tou4 gaau1 seoi2",
+      "jyutping": "ho ji tou gaau seoi",
+      "picture": {
+        "kind": "train",
+        "scene": "glue",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-4530617b10d4"
+    },
+    "w-bd0bb89a4d": {
+      "id": "w-bd0bb89a4d",
+      "text": "投入硬幣",
+      "jyutpingTones": "tau4 jap6 ngaang6 bai6",
+      "jyutping": "tau jap ngaang bai",
+      "picture": {
+        "kind": "train",
+        "scene": "juice",
+        "panel": 0
+      },
+      "audio": "zyc-v1-word-bd0bb89a4d9f"
+    },
+    "w-89625d7d9e": {
+      "id": "w-89625d7d9e",
+      "text": "可以買到",
+      "jyutpingTones": "ho2 ji5 maai5 dou3",
+      "jyutping": "ho ji maai dou",
+      "picture": {
+        "kind": "train",
+        "scene": "juice",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-89625d7d9e48"
+    },
+    "w-64c25f038c": {
+      "id": "w-64c25f038c",
+      "text": "果汁",
+      "jyutpingTones": "gwo2 zap1",
+      "jyutping": "gwo zap",
+      "picture": {
+        "kind": "train",
+        "scene": "juice",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-64c25f038caa"
+    },
+    "w-142272c44d": {
+      "id": "w-142272c44d",
+      "text": "小花",
+      "jyutpingTones": "siu2 faa1",
+      "jyutping": "siu faa",
+      "picture": {
+        "kind": "train",
+        "scene": "flower",
+        "panel": 0
+      },
+      "audio": "zyc-v1-word-142272c44dc7"
+    },
+    "w-504a83a844": {
+      "id": "w-504a83a844",
+      "text": "得到水分",
+      "jyutpingTones": "dak1 dou3 seoi2 fan6",
+      "jyutping": "dak dou seoi fan",
+      "picture": {
+        "kind": "train",
+        "scene": "flower",
+        "panel": 0
+      },
+      "audio": "zyc-v1-word-504a83a84481"
+    },
+    "w-7ae86f47ad": {
+      "id": "w-7ae86f47ad",
+      "text": "可以繼續",
+      "jyutpingTones": "ho2 ji5 gai3 zuk6",
+      "jyutping": "ho ji gai zuk",
+      "picture": {
+        "kind": "train",
+        "scene": "flower",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-7ae86f47ad3c"
+    },
+    "w-dc8937308c": {
+      "id": "w-dc8937308c",
+      "text": "生長",
+      "jyutpingTones": "saang1 zoeng2",
+      "jyutping": "saang zoeng",
+      "picture": {
+        "kind": "train",
+        "scene": "flower",
+        "panel": 1
+      },
+      "audio": "zyc-v1-word-dc8937308c98"
+    }
+  },
+  "audio": {
+    "zyc-v1-word-b4ffef701723": {
+      "text": "刷牙",
+      "file": "assets/audio/zyc-v1-word-b4ffef701723.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-2834161fcf62": {
+      "text": "拍球",
+      "file": "assets/audio/zyc-v1-word-2834161fcf62.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-874af2bf6005": {
+      "text": "打開水樽蓋",
+      "file": "assets/audio/zyc-v1-word-874af2bf6005.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-1f6a7f36d6b9": {
+      "text": "小明只有打開水樽蓋，才可以喝水。",
+      "file": "assets/audio/zyc-v1-sentence-1f6a7f36d6b9.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-6b3d7eba4410": {
+      "text": "小明只有……，才可以喝水。",
+      "file": "assets/audio/zyc-v1-question-6b3d7eba4410.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-de919311adf8": {
+      "text": "洗手",
+      "file": "assets/audio/zyc-v1-word-de919311adf8.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-6320b818bdf7": {
+      "text": "跳繩",
+      "file": "assets/audio/zyc-v1-word-6320b818bdf7.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-cd64301f6c9f": {
+      "text": "打開書包",
+      "file": "assets/audio/zyc-v1-word-cd64301f6c9f.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-4e1c7c5dc71e": {
+      "text": "小美只有打開書包，才可以拿出課本。",
+      "file": "assets/audio/zyc-v1-sentence-4e1c7c5dc71e.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-818aa187b42e": {
+      "text": "小美只有……，才可以拿出課本。",
+      "file": "assets/audio/zyc-v1-question-818aa187b42e.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-58476ef7cca0": {
+      "text": "畫畫",
+      "file": "assets/audio/zyc-v1-word-58476ef7cca0.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-07fb68a19df0": {
+      "text": "踢球",
+      "file": "assets/audio/zyc-v1-word-07fb68a19df0.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-316c6c76e382": {
+      "text": "打開水龍頭",
+      "file": "assets/audio/zyc-v1-word-316c6c76e382.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-153087f3f440": {
+      "text": "我只有打開水龍頭，才可以洗手。",
+      "file": "assets/audio/zyc-v1-sentence-153087f3f440.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-92e577839e0b": {
+      "text": "我只有……，才可以洗手。",
+      "file": "assets/audio/zyc-v1-question-92e577839e0b.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-797e5efcdf2e": {
+      "text": "梳頭",
+      "file": "assets/audio/zyc-v1-word-797e5efcdf2e.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-e96af342f3d1": {
+      "text": "掃地",
+      "file": "assets/audio/zyc-v1-word-e96af342f3d1.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-891542956644": {
+      "text": "拿出車票",
+      "file": "assets/audio/zyc-v1-word-891542956644.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-73d6ebb86cd0": {
+      "text": "我們只有拿出車票，才可以坐火車。",
+      "file": "assets/audio/zyc-v1-sentence-73d6ebb86cd0.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-08c82042d89d": {
+      "text": "我們只有……，才可以坐火車。",
+      "file": "assets/audio/zyc-v1-question-08c82042d89d.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-0e6c9e031ae6": {
+      "text": "吃雪糕",
+      "file": "assets/audio/zyc-v1-word-0e6c9e031ae6.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-bad5a6f6e654": {
+      "text": "畫圖畫",
+      "file": "assets/audio/zyc-v1-word-bad5a6f6e654.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-95d3e6181be8": {
+      "text": "排好隊",
+      "file": "assets/audio/zyc-v1-word-95d3e6181be8.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-951af72ed91a": {
+      "text": "小朋友只有排好隊，才可以上校巴。",
+      "file": "assets/audio/zyc-v1-sentence-951af72ed91a.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-35bd921ae2b0": {
+      "text": "小朋友只有……，才可以上校巴。",
+      "file": "assets/audio/zyc-v1-question-35bd921ae2b0.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-80f4cc39c4c1": {
+      "text": "可以踢球",
+      "file": "assets/audio/zyc-v1-word-80f4cc39c4c1.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-706c96c06d5f": {
+      "text": "可以吃香蕉",
+      "file": "assets/audio/zyc-v1-word-706c96c06d5f.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-e06d2adab759": {
+      "text": "可以開燈",
+      "file": "assets/audio/zyc-v1-word-e06d2adab759.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-eceb172a58c6": {
+      "text": "小明只有按下開關，才可以開燈。",
+      "file": "assets/audio/zyc-v1-sentence-eceb172a58c6.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-b87122169298": {
+      "text": "小明只有按下開關，才……。",
+      "file": "assets/audio/zyc-v1-question-b87122169298.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-8a97c342d8bf": {
+      "text": "可以跳繩",
+      "file": "assets/audio/zyc-v1-word-8a97c342d8bf.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-0de6800b7751": {
+      "text": "可以梳頭",
+      "file": "assets/audio/zyc-v1-word-0de6800b7751.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-22989584f2ea": {
+      "text": "可以拿出牛奶",
+      "file": "assets/audio/zyc-v1-word-22989584f2ea.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-8231629cbe65": {
+      "text": "小美只有打開雪櫃門，才可以拿出牛奶。",
+      "file": "assets/audio/zyc-v1-sentence-8231629cbe65.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-0c6e2be3b5d5": {
+      "text": "小美只有打開雪櫃門，才……。",
+      "file": "assets/audio/zyc-v1-question-0c6e2be3b5d5.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-51a92ad624f6": {
+      "text": "可以游泳",
+      "file": "assets/audio/zyc-v1-word-51a92ad624f6.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-8dbf37408438": {
+      "text": "可以吃西瓜",
+      "file": "assets/audio/zyc-v1-word-8dbf37408438.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-a581c66c9507": {
+      "text": "可以拿出橡皮擦",
+      "file": "assets/audio/zyc-v1-word-a581c66c9507.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-90f4078435b4": {
+      "text": "我只有打開筆袋，才可以拿出橡皮擦。",
+      "file": "assets/audio/zyc-v1-sentence-90f4078435b4.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-35ce72619a23": {
+      "text": "我只有打開筆袋，才……。",
+      "file": "assets/audio/zyc-v1-question-35ce72619a23.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-5e078dd4344b": {
+      "text": "可以洗臉",
+      "file": "assets/audio/zyc-v1-word-5e078dd4344b.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-336de6cd2b98": {
+      "text": "可以踢足球",
+      "file": "assets/audio/zyc-v1-word-336de6cd2b98.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-98ec515fd6d2": {
+      "text": "可以寄出這封信",
+      "file": "assets/audio/zyc-v1-word-98ec515fd6d2.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-abe56d71001b": {
+      "text": "小明只有貼上郵票，才可以寄出這封信。",
+      "file": "assets/audio/zyc-v1-sentence-abe56d71001b.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-1e0bc33e8d0e": {
+      "text": "小明只有貼上郵票，才……。",
+      "file": "assets/audio/zyc-v1-question-1e0bc33e8d0e.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-842523e23c8d": {
+      "text": "可以刷牙",
+      "file": "assets/audio/zyc-v1-word-842523e23c8d.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-06efca4214be": {
+      "text": "可以吃餅乾",
+      "file": "assets/audio/zyc-v1-word-06efca4214be.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-ff7d69828d91": {
+      "text": "可以叫來升降機",
+      "file": "assets/audio/zyc-v1-word-ff7d69828d91.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-14cf320344bf": {
+      "text": "小美只有按下按鈕，才可以叫來升降機。",
+      "file": "assets/audio/zyc-v1-sentence-14cf320344bf.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-question-e24a20292085": {
+      "text": "小美只有按下按鈕，才……。",
+      "file": "assets/audio/zyc-v1-question-e24a20292085.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-b70bb4acc048": {
+      "text": "我",
+      "file": "assets/audio/zyc-v1-word-b70bb4acc048.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-ba8bd7c8c974": {
+      "text": "只有",
+      "file": "assets/audio/zyc-v1-word-ba8bd7c8c974.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-e60543375cb9": {
+      "text": "打開盒蓋",
+      "file": "assets/audio/zyc-v1-word-e60543375cb9.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-b6011fd58387": {
+      "text": "逗號",
+      "file": "assets/audio/zyc-v1-word-b6011fd58387.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-9a8d951dcb60": {
+      "text": "才",
+      "file": "assets/audio/zyc-v1-word-9a8d951dcb60.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-f9cb4b45994e": {
+      "text": "可以拿出",
+      "file": "assets/audio/zyc-v1-word-f9cb4b45994e.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-0c34adc9460a": {
+      "text": "盒內的餅乾",
+      "file": "assets/audio/zyc-v1-word-0c34adc9460a.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-351dcac4facb": {
+      "text": "句號",
+      "file": "assets/audio/zyc-v1-word-351dcac4facb.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-861286ec192c": {
+      "text": "我只有打開盒蓋，才可以拿出盒內的餅乾。",
+      "file": "assets/audio/zyc-v1-sentence-861286ec192c.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-b91f367c5690": {
+      "text": "雨傘",
+      "file": "assets/audio/zyc-v1-word-b91f367c5690.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-d57366ca4f4f": {
+      "text": "打開",
+      "file": "assets/audio/zyc-v1-word-d57366ca4f4f.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-8299c1d369b4": {
+      "text": "可以擋雨",
+      "file": "assets/audio/zyc-v1-word-8299c1d369b4.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-eebe3a8e0011": {
+      "text": "雨傘只有打開，才可以擋雨。",
+      "file": "assets/audio/zyc-v1-sentence-eebe3a8e0011.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-df3ea25a4369": {
+      "text": "小明",
+      "file": "assets/audio/zyc-v1-word-df3ea25a4369.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-8a3aa156426f": {
+      "text": "膠水蓋",
+      "file": "assets/audio/zyc-v1-word-8a3aa156426f.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-4530617b10d4": {
+      "text": "可以塗膠水",
+      "file": "assets/audio/zyc-v1-word-4530617b10d4.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-ff05b1b69160": {
+      "text": "小明只有打開膠水蓋，才可以塗膠水。",
+      "file": "assets/audio/zyc-v1-sentence-ff05b1b69160.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-bd0bb89a4d9f": {
+      "text": "投入硬幣",
+      "file": "assets/audio/zyc-v1-word-bd0bb89a4d9f.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-89625d7d9e48": {
+      "text": "可以買到",
+      "file": "assets/audio/zyc-v1-word-89625d7d9e48.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-64c25f038caa": {
+      "text": "果汁",
+      "file": "assets/audio/zyc-v1-word-64c25f038caa.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-10d6b315f174": {
+      "text": "我只有投入硬幣，才可以買到果汁。",
+      "file": "assets/audio/zyc-v1-sentence-10d6b315f174.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-142272c44dc7": {
+      "text": "小花",
+      "file": "assets/audio/zyc-v1-word-142272c44dc7.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-504a83a84481": {
+      "text": "得到水分",
+      "file": "assets/audio/zyc-v1-word-504a83a84481.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-7ae86f47ad3c": {
+      "text": "可以繼續",
+      "file": "assets/audio/zyc-v1-word-7ae86f47ad3c.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-word-dc8937308c98": {
+      "text": "生長",
+      "file": "assets/audio/zyc-v1-word-dc8937308c98.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-sentence-058558b78a9d": {
+      "text": "小花只有得到水分，才可以繼續生長。",
+      "file": "assets/audio/zyc-v1-sentence-058558b78a9d.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-feedback-2489db7a6bae": {
+      "text": "再試一試。",
+      "file": "assets/audio/zyc-v1-feedback-2489db7a6bae.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    },
+    "zyc-v1-feedback-97c6bbf85445": {
+      "text": "答對了！",
+      "file": "assets/audio/zyc-v1-feedback-97c6bbf85445.mp3",
+      "voice": "zh-HK-HiuMaanNeural"
+    }
+  },
+  "feedback": {
+    "再試一試。": "zyc-v1-feedback-2489db7a6bae",
+    "答對了！": "zyc-v1-feedback-97c6bbf85445"
+  }
+}

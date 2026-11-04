@@ -1,0 +1,682 @@
+{
+  "我": {
+    "reading": "ngo5",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A7%DA",
+    "readings": [
+      "ngo5"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "開": {
+    "reading": "hoi1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%B6%7D",
+    "readings": [
+      "hoi1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "小": {
+    "reading": "siu2",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A4p",
+    "readings": [
+      "siu2"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "燈": {
+    "reading": "dang1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%BFO",
+    "readings": [
+      "dang1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-traffic-v4-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "來": {
+    "reading": "loi4",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A8%D3",
+    "readings": [
+      "lai4",
+      "loi4",
+      "loi6"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "手": {
+    "reading": "sau2",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A4%E2",
+    "readings": [
+      "sau2"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "足": {
+    "reading": "zuk1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A8%AC",
+    "readings": [
+      "zeoi3",
+      "zuk1",
+      "zyu3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v1-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "到": {
+    "reading": "dou3",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A8%EC",
+    "readings": [
+      "dou3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "下": {
+    "reading": "haa6",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A4U",
+    "readings": [
+      "haa5",
+      "haa6"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-traffic-v4-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "上": {
+    "reading": "soeng5",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A4W",
+    "readings": [
+      "soeng5",
+      "soeng6"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "西": {
+    "reading": "sai1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A6%E8",
+    "readings": [
+      "sai1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "得": {
+    "reading": "dak1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%B1o",
+    "readings": [
+      "dak1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "雨": {
+    "reading": "jyu5",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%ABB",
+    "readings": [
+      "jyu5",
+      "jyu6"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "出": {
+    "reading": "ceot1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A5X",
+    "readings": [
+      "ceot1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "水": {
+    "reading": "seoi2",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A4%F4",
+    "readings": [
+      "seoi2"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "擦": {
+    "reading": "caat3",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%C0%BF",
+    "readings": [
+      "caat3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "筆": {
+    "reading": "bat1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%B5%A7",
+    "readings": [
+      "bat1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "拍": {
+    "reading": "paak3",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A9%E7",
+    "readings": [
+      "paak3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "書": {
+    "reading": "syu1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%AE%D1",
+    "readings": [
+      "syu1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "包": {
+    "reading": "baau1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A5%5D",
+    "readings": [
+      "baau1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "按": {
+    "reading": "on3",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%AB%F6",
+    "readings": [
+      "on3",
+      "ngon3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "鈕": {
+    "reading": "nau2",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%B6s",
+    "readings": [
+      "nau2",
+      "nau5"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "蓋": {
+    "reading": "goi3",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%BB%5C",
+    "readings": [
+      "gap3",
+      "hap6",
+      "goi3",
+      "koi3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-distinct-v3-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "圖": {
+    "reading": "tou4",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%B9%CF",
+    "readings": [
+      "tou4"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "門": {
+    "reading": "mun4",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%AA%F9",
+    "readings": [
+      "mun4"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "龍": {
+    "reading": "lung4",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%C0s",
+    "readings": [
+      "lung4"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "頭": {
+    "reading": "tau4",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%C0Y",
+    "readings": [
+      "tau4"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "打": {
+    "reading": "daa2",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A5%B4",
+    "readings": [
+      "daa1",
+      "daa2",
+      "ding2"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "繩": {
+    "reading": "sing4",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%C3%B7",
+    "readings": [
+      "sing4"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-extra-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "好": {
+    "reading": "hou2",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A6n",
+    "readings": [
+      "hou2",
+      "hou3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "吃": {
+    "reading": "hek3",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A6Y",
+    "readings": [
+      "jaak3",
+      "gat1",
+      "hat1",
+      "hek3"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "橡": {
+    "reading": "zoeng6",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%BE%F3",
+    "readings": [
+      "zoeng6"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "皮": {
+    "reading": "pei4",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A5%D6",
+    "readings": [
+      "pei4"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "坐": {
+    "reading": "co5",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A7%A4",
+    "readings": [
+      "co5",
+      "zo6"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "校": {
+    "reading": "haau6",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%AE%D5",
+    "readings": [
+      "gaau3",
+      "haau6"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "巴": {
+    "reading": "baa1",
+    "source": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%A4%DA",
+    "readings": [
+      "baa1"
+    ],
+    "evidenceFile": "references/cuhk-retained/cuhk-train-v2-audit.json",
+    "status": "verified-retained",
+    "referenceRepository": "https://github.com/angusQAQ/yi-jiu-games"
+  },
+  "樽": {
+    "reading": "zeon1",
+    "status": "pending-live-check"
+  },
+  "喝": {
+    "reading": "hot3",
+    "status": "pending-live-check"
+  },
+  "明": {
+    "reading": "ming4",
+    "status": "pending-live-check"
+  },
+  "美": {
+    "reading": "mei5",
+    "status": "pending-live-check"
+  },
+  "們": {
+    "reading": "mun4",
+    "status": "pending-live-check"
+  },
+  "朋": {
+    "reading": "pang4",
+    "status": "pending-live-check"
+  },
+  "友": {
+    "reading": "jau5",
+    "status": "pending-live-check"
+  },
+  "只": {
+    "reading": "zi2",
+    "status": "pending-live-check"
+  },
+  "有": {
+    "reading": "jau5",
+    "status": "pending-live-check"
+  },
+  "才": {
+    "reading": "coi4",
+    "status": "pending-live-check"
+  },
+  "可": {
+    "reading": "ho2",
+    "status": "pending-live-check"
+  },
+  "以": {
+    "reading": "ji5",
+    "status": "pending-live-check"
+  },
+  "拿": {
+    "reading": "naa4",
+    "status": "pending-live-check"
+  },
+  "課": {
+    "reading": "fo3",
+    "status": "pending-live-check"
+  },
+  "本": {
+    "reading": "bun2",
+    "status": "pending-live-check"
+  },
+  "洗": {
+    "reading": "sai2",
+    "status": "pending-live-check"
+  },
+  "車": {
+    "reading": "ce1",
+    "status": "pending-live-check"
+  },
+  "票": {
+    "reading": "piu3",
+    "status": "pending-live-check"
+  },
+  "火": {
+    "reading": "fo2",
+    "status": "pending-live-check"
+  },
+  "排": {
+    "reading": "paai4",
+    "status": "pending-live-check"
+  },
+  "隊": {
+    "reading": "deoi6",
+    "status": "pending-live-check"
+  },
+  "關": {
+    "reading": "gwaan1",
+    "status": "pending-live-check"
+  },
+  "雪": {
+    "reading": "syut3",
+    "status": "pending-live-check"
+  },
+  "櫃": {
+    "reading": "gwai6",
+    "status": "pending-live-check"
+  },
+  "牛": {
+    "reading": "ngau4",
+    "status": "pending-live-check"
+  },
+  "奶": {
+    "reading": "naai5",
+    "status": "pending-live-check"
+  },
+  "袋": {
+    "reading": "doi2",
+    "status": "pending-live-check"
+  },
+  "貼": {
+    "reading": "tip3",
+    "status": "pending-live-check"
+  },
+  "郵": {
+    "reading": "jau4",
+    "status": "pending-live-check"
+  },
+  "寄": {
+    "reading": "gei3",
+    "status": "pending-live-check"
+  },
+  "這": {
+    "reading": "ze5",
+    "status": "pending-live-check"
+  },
+  "封": {
+    "reading": "fung1",
+    "status": "pending-live-check"
+  },
+  "信": {
+    "reading": "seon3",
+    "status": "pending-live-check"
+  },
+  "叫": {
+    "reading": "giu3",
+    "status": "pending-live-check"
+  },
+  "升": {
+    "reading": "sing1",
+    "status": "pending-live-check"
+  },
+  "降": {
+    "reading": "gong3",
+    "status": "pending-live-check"
+  },
+  "機": {
+    "reading": "gei1",
+    "status": "pending-live-check"
+  },
+  "刷": {
+    "reading": "caat3",
+    "status": "pending-live-check"
+  },
+  "牙": {
+    "reading": "ngaa4",
+    "status": "pending-live-check"
+  },
+  "球": {
+    "reading": "kau4",
+    "status": "pending-live-check"
+  },
+  "跳": {
+    "reading": "tiu3",
+    "status": "pending-live-check"
+  },
+  "畫": {
+    "reading": "waa2",
+    "status": "pending-live-check"
+  },
+  "踢": {
+    "reading": "tek3",
+    "status": "pending-live-check"
+  },
+  "梳": {
+    "reading": "so1",
+    "status": "pending-live-check"
+  },
+  "掃": {
+    "reading": "sou3",
+    "status": "pending-live-check"
+  },
+  "地": {
+    "reading": "dei6",
+    "status": "pending-live-check"
+  },
+  "糕": {
+    "reading": "gou1",
+    "status": "pending-live-check"
+  },
+  "香": {
+    "reading": "hoeng1",
+    "status": "pending-live-check"
+  },
+  "蕉": {
+    "reading": "ziu1",
+    "status": "pending-live-check"
+  },
+  "游": {
+    "reading": "jau4",
+    "status": "pending-live-check"
+  },
+  "泳": {
+    "reading": "wing6",
+    "status": "pending-live-check"
+  },
+  "瓜": {
+    "reading": "gwaa1",
+    "status": "pending-live-check"
+  },
+  "臉": {
+    "reading": "lim5",
+    "status": "pending-live-check"
+  },
+  "餅": {
+    "reading": "beng2",
+    "status": "pending-live-check"
+  },
+  "乾": {
+    "reading": "gon1",
+    "status": "pending-live-check"
+  },
+  "盒": {
+    "reading": "hap6",
+    "status": "pending-live-check"
+  },
+  "內": {
+    "reading": "noi6",
+    "status": "pending-live-check"
+  },
+  "的": {
+    "reading": "dik1",
+    "status": "pending-live-check"
+  },
+  "傘": {
+    "reading": "saan3",
+    "status": "pending-live-check"
+  },
+  "擋": {
+    "reading": "dong2",
+    "status": "pending-live-check"
+  },
+  "膠": {
+    "reading": "gaau1",
+    "status": "pending-live-check"
+  },
+  "塗": {
+    "reading": "tou4",
+    "status": "pending-live-check"
+  },
+  "投": {
+    "reading": "tau4",
+    "status": "pending-live-check"
+  },
+  "入": {
+    "reading": "jap6",
+    "status": "pending-live-check"
+  },
+  "硬": {
+    "reading": "ngaang6",
+    "status": "pending-live-check"
+  },
+  "幣": {
+    "reading": "bai6",
+    "status": "pending-live-check"
+  },
+  "買": {
+    "reading": "maai5",
+    "status": "pending-live-check"
+  },
+  "果": {
+    "reading": "gwo2",
+    "status": "pending-live-check"
+  },
+  "汁": {
+    "reading": "zap1",
+    "status": "pending-live-check"
+  },
+  "花": {
+    "reading": "faa1",
+    "status": "pending-live-check"
+  },
+  "分": {
+    "reading": "fan6",
+    "status": "pending-live-check"
+  },
+  "繼": {
+    "reading": "gai3",
+    "status": "pending-live-check"
+  },
+  "續": {
+    "reading": "zuk6",
+    "status": "pending-live-check"
+  },
+  "生": {
+    "reading": "saang1",
+    "status": "pending-live-check"
+  },
+  "長": {
+    "reading": "zoeng2",
+    "status": "pending-live-check"
+  }
+}
