@@ -24,6 +24,12 @@ with sync_playwright() as p:
  page.on('response',lambda r:bad.append(str(r.status)+' '+r.url) if r.status>=400 else None)
  page.add_init_script('''window.actualSpeakers=[];window.audioEnded=[];const OriginalAudio=window.Audio;window.Audio=function(...args){const a=new OriginalAudio(...args);a.addEventListener('ended',()=>window.audioEnded.push(a.currentSrc));window.actualSpeakers.push(a);return a;};''')
  page.goto(base,wait_until='networkidle')
+ homepage_text=page.locator('.home-page').inner_text()
+ assert all(t not in homepage_text for t in ['小島中文','小島生活任務','小島句子列車'])
+ assert '小島中文' not in page.title()
+ assert page.locator('[data-intro]').count()==2
+ assert 'home-island-background-v1.png' in page.locator('body').evaluate('(el)=>getComputedStyle(el).backgroundImage')
+ assert page.locator('body').evaluate('(el)=>getComputedStyle(el).fontWeight')=='900'
  durations=page.evaluate('''async files=>{const out={};for(const file of files){const a=document.createElement('audio');a.preload='metadata';await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('metadata timeout '+file)),20000);a.onloadedmetadata=()=>{clearTimeout(timer);resolve()};a.onerror=()=>{clearTimeout(timer);reject(Error('decode error '+file))};a.src=file;a.load()});if(!Number.isFinite(a.duration)||a.duration<=0)throw Error('invalid duration '+file);out[file]=a.duration;a.removeAttribute('src');a.load()}return out}''',ready['files'])
  assert len(durations)==78
  passed('all 78 real narration clips load and decode',{'count':len(durations),'totalSeconds':round(sum(durations.values()),2)})

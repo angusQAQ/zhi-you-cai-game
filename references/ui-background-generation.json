@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen",
+  "retainedOriginal": "/workspace/generated_images/exec-c523f902-7e8f-4602-94cb-2b0edbaf9ac5.png",
+  "prompt": "Create a polished decorative full-screen BACKGROUND for a Hong Kong primary-school Chinese language learning game. Landscape 16:9, warm hand-painted gouache and watercolor textbook illustration, gentle painted outlines, soft paper grain, cheerful sunny miniature island. Camera looks across a quiet turquoise bay toward small green hills. Frame EDGES with soft palm leaves upper corners, golden sand and tiny flowering shrubs lower corners, a very small red-and-blue toy steam railway curving across the far bottom edge. Small pastel schoolhouse and village only near far side edges, simple white clouds. IMPORTANT UI composition: large CENTRAL 70 percent of canvas is uncluttered pale sky/cream/light mint with very LOW contrast and no objects, reserved for website text and two large illustrated buttons that will be added separately. Bottom and side landscape remains visible around those buttons. No people, no cards, no panels, no interface components, no arrows, NO text, letters, numbers, labels, logos, borders or watermarks. Mood exactly like a friendly East Asian primary textbook, not photorealistic and not 3D. Cohesive cream, soft mint, sky blue and warm sand palette. Clean clear empty center, native landscape proportions.",
+  "visualReview": "passed",
+  "findings": [
+    "無文字或浮水印",
+    "中央留白與低對比配合首頁文字及兩個圖像入口",
+    "原比例背景顯示，不拉伸"
+  ]
+}

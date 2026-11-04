@@ -1,0 +1,223 @@
+{
+  "source": "yi-jiu-games 74253623bed8183fcd3ba28e446bb4bcdb78af8b",
+  "comparisons": [
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "game": "life",
+      "element": ".island-main",
+      "reference": {
+        "x": 18,
+        "y": 125,
+        "width": 1244,
+        "height": 341
+      },
+      "updated": {
+        "x": 18,
+        "y": 125,
+        "width": 1244,
+        "height": 341
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "game": "life",
+      "element": ".island-controls",
+      "reference": {
+        "x": 18,
+        "y": 478,
+        "width": 1244,
+        "height": 230
+      },
+      "updated": {
+        "x": 18,
+        "y": 478,
+        "width": 1244,
+        "height": 230
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "game": "train",
+      "element": ".train-question",
+      "reference": {
+        "x": 18,
+        "y": 146,
+        "width": 1244,
+        "height": 165
+      },
+      "updated": {
+        "x": 18,
+        "y": 146,
+        "width": 1244,
+        "height": 165
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "game": "train",
+      "element": ".train-track",
+      "reference": {
+        "x": 18,
+        "y": 317,
+        "width": 1244,
+        "height": 175
+      },
+      "updated": {
+        "x": 18,
+        "y": 317,
+        "width": 1244,
+        "height": 175
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "game": "train",
+      "element": ".train-bank",
+      "reference": {
+        "x": 18,
+        "y": 529,
+        "width": 1244,
+        "height": 178
+      },
+      "updated": {
+        "x": 18,
+        "y": 529,
+        "width": 1244,
+        "height": 178
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "game": "life",
+      "element": ".island-main",
+      "reference": {
+        "x": 35,
+        "y": 166,
+        "width": 1850,
+        "height": 549.203125
+      },
+      "updated": {
+        "x": 35,
+        "y": 166,
+        "width": 1850,
+        "height": 549.203125
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "game": "life",
+      "element": ".island-controls",
+      "reference": {
+        "x": 35,
+        "y": 727.203125,
+        "width": 1850,
+        "height": 334.796875
+      },
+      "updated": {
+        "x": 35,
+        "y": 727.203125,
+        "width": 1850,
+        "height": 334.796875
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "game": "train",
+      "element": ".train-question",
+      "reference": {
+        "x": 35,
+        "y": 182,
+        "width": 1850,
+        "height": 220
+      },
+      "updated": {
+        "x": 35,
+        "y": 182,
+        "width": 1850,
+        "height": 220
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "game": "train",
+      "element": ".train-track",
+      "reference": {
+        "x": 35,
+        "y": 410,
+        "width": 1850,
+        "height": 210
+      },
+      "updated": {
+        "x": 35,
+        "y": 410,
+        "width": 1850,
+        "height": 210
+      },
+      "maxDifferencePixels": 0
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "game": "train",
+      "element": ".train-bank",
+      "reference": {
+        "x": 35,
+        "y": 666,
+        "width": 1850,
+        "height": 190
+      },
+      "updated": {
+        "x": 35,
+        "y": 666,
+        "width": 1850,
+        "height": 190
+      },
+      "maxDifferencePixels": 0
+    }
+  ],
+  "passed": true,
+  "homeChecks": [
+    "two picture entrances",
+    "no removed brand/game headings",
+    "background image present",
+    "bold Kai 900",
+    "no desktop scrolling"
+  ]
+}

@@ -18,6 +18,9 @@ def main():
  for file,entry in manifest.items():
   path=ROOT/'dist'/file
   if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=entry['sha256']:errors.append('Shared art changed without audit '+file)
+ ui=json.loads((ROOT/'references/ui-reference-manifest.json').read_text())
+ reference_css=ROOT/ui['copiedFile']
+ if not reference_css.is_file() or hashlib.sha256(reference_css.read_bytes()).hexdigest()!=ui['sha256']:errors.append('Reference classroom UI stylesheet changed without audit')
  for file in ['assets/education-kai.ttf','assets/kai-variant-7240.woff2','assets/font-source.txt','assets/kai-variant-license.txt','assets/vocab-v1.png','assets/train-engine-16-v1.png','assets/train-carriages-16-v3.png']:
   if not (ROOT/'dist'/file).is_file():errors.append('Missing '+file)
  ready=json.loads((ROOT/'dist/audio-ready.json').read_text())['files'];missing=[]

@@ -36,3 +36,11 @@ GitHub runner 的原生音訊測試另發現固定 sleep 對較慢環境不足�
 [Verify live game website 41760814861](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41760814861) 已成功完成。GitHub runner 在正式 HTTPS 網址實際載入及解碼全部 78 段配音，逐句播放 15 句重溫，操作兩款遊戲各一題並確認完整配音與動畫結束後只推進一次；無 JavaScript 或素材 HTTP 錯誤。共 5 項正式站情境全部通過。
 
 另有 105 項正式站資源 HTTP 200 檢查通過；78 段音檔及程式／資料檔的 SHA-256 與提交內容相符。原始結果為 `evidence/live-http-assets.json`、`evidence/live-production-audio-results.json`。正式頁面截圖為 `evidence/live-home-1280.png`、`live-home-1920.png`、`live-life-1920.png`、`live-train-1920.png`，亦已目視檢查。
+
+## UI 對照更新驗證
+
+首頁已刪除指定品牌與兩款遊戲名稱，保留兩個可操作的圖像入口，並加入新的海島背景。兩個指定解像度皆無需捲動首頁；漢字計算樣式為 900 粗體標楷體，與參考版本同樣的描邊設定，粵拼維持 Times New Roman。
+
+對照同一版本的「一……就……」實際頁面，分別量測生活任務的上方場景／句子面板及下方操作區，以及列車的情境面板、軌道、詞庫。在 1280×720、1920×1080 共 **10 項位置及尺寸對照全部一致**，最大差異 0 像素；原始數據及畫面存於 `evidence/ui-reference-layout-comparison.json` 與 `evidence/ui-*.png`。新句式必需的左右空框、第二人觸發、8／7 節車廂按新題庫保留。
+
+本輪 16 項瀏覽器流程通過，包含所有 15 題、左右空格提示、角色交替、雙觸控拖動、交換／放回、暫停、跳題與重溫；4 項音訊生命週期、5 項正式音檔流程及 9 項核心檢查通過。字型、題庫、配音內容沒有更換。重溫重新遊玩改用原版標頭的「重新開始」按鈕，測試按實際按鈕操作。

@@ -14,7 +14,7 @@ with tempfile.TemporaryDirectory() as folder:
   page.add_init_script('''window.testMedia=[];const NativeAudio=window.Audio;window.Audio=function(...args){const a=new NativeAudio(...args);window.testMedia.push(a);return a;};''')
   page.route('**/audio-ready.json',lambda r:r.fulfill(json={'files':[v['file'] for v in data['audio'].values()]}))
   page.route('**/assets/audio/*.mp3',lambda r:r.fulfill(path=str(audio),content_type='audio/mpeg'))
-  page.goto('http://127.0.0.1:8793',wait_until='networkidle')
+  page.goto(os.environ.get('GAME_TEST_URL','http://127.0.0.1:8793/'),wait_until='networkidle')
   page.locator('[data-intro="life"]').click();page.locator('[data-action="start"]').click()
   q=data['life'][0];page.locator(f'[data-option="{q["correct"]}"]').click();page.locator('[data-action="act"]').click()
   page.wait_for_timeout(1800)

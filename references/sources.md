@@ -18,3 +18,7 @@
 粵語音檔規劃採 Microsoft Edge Read Aloud 的 `zh-HK-HiuMaanNeural`，並非香港中文大學錄音。本次 78 段配音均已生成，音檔文字、識別名稱、時長及 SHA-256 保存在 `references/audio-manifest.json`。
 
 本輪部署核查補記：「袋」的中大本字讀音列為 `doi6`，詞例包括布袋、手袋，並列出「筆」為配搭點；原暫訂 `doi2` 已改按本字讀音記錄。學生畫面仍顯示無聲調 `doi`。證據見 `references/cuhk-pages/888b.html`。
+
+本輪 UI 按使用者指示直接沿用上述參考版本的完整 `dist/style.css`，原樣存為本專案 `dist/reference-ui.css`；未修改參考專案。`ui-reference-manifest.json` 保存 SHA-256 與適配範圍。首頁／介紹頁沿用原版 `train-station-v1.png`；首頁新背景由 image_gen 產生，提示詞與核查見 `ui-background-generation.json`，原比例顯示，沒有烘焙文字。
+
+粗體標楷體採原版的 font-weight 900、font-synthesis: weight 與文字描邊設定；原教育部字型及「牀」補字檔保持原樣、授權說明保留。

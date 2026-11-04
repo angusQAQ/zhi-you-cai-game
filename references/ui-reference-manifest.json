@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/angusQAQ/yi-jiu-games",
+  "commit": "74253623bed8183fcd3ba28e446bb4bcdb78af8b",
+  "sourceFile": "dist/style.css",
+  "copiedFile": "dist/reference-ui.css",
+  "unchanged": true,
+  "sha256": "29a931eab3c0195fb959fd3d4641cbce063ef970bdf5e0b760644d1c16aff91f",
+  "adaptations": [
+    "主頁保留兩個圖像入口，刪除兩個遊戲名稱文字及小島中文",
+    "新首頁背景與原版標楷體、按鈕、邊框配色",
+    "沿用生活任務的場景／句子上方版面，以及左動作、右選項控制區",
+    "保留新句式必需的左右關係空框與逐題雙人角色",
+    "列車沿用難度列、情境／說明、置中車廂與車頭、下方詞卡的位置及樣式",
+    "詞卡依本題固定語意切分，標點與只有／才獨立，所有音檔及題庫未更換"
+  ]
+}

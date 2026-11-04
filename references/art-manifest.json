@@ -497,5 +497,25 @@
       "93b7ad765584e2305d544d29c6e23b627988542eb3ce01f3105b60de1a7b8249",
       "d02179013bf1a2f3cad7f49a45a3ff164c7eda2f19caa25cbf8532ce24a394c7"
     ]
+  },
+  "assets/home-island-background-v1.png": {
+    "source": "OpenAI image_gen; created in this authorized cloud environment",
+    "width": 1672,
+    "height": 941,
+    "columns": 1,
+    "rows": 1,
+    "sha256": "25a13984595a1b75270d9dca48c9903fa77befd50fd14b1b73f12bfb0d39f78f",
+    "creationBrief": "首頁專用水彩海島背景，中央留白，四周棕櫚、沙灘、學校與小火車；沒有文字，等比例 cover 顯示。",
+    "visualReview": "passed"
+  },
+  "assets/train-station-v1.png": {
+    "source": "Unmodified angusQAQ/yi-jiu-games at 74253623bed8183fcd3ba28e446bb4bcdb78af8b",
+    "width": 1536,
+    "height": 1024,
+    "columns": 1,
+    "rows": 1,
+    "sha256": "427df40b6c85d67144df134f9271443dc1d18982df9bcef55cf525d54f0d6cc7",
+    "creationBrief": "沿用參考專案原版首頁／介紹頁的彩繪火車車站，與本遊戲主題相符，非題目答案圖。",
+    "visualReview": "passed"
   }
 }

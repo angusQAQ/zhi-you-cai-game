@@ -22,9 +22,16 @@ with sync_playwright() as p:
  page=b.new_page(viewport={'width':1280,'height':720},has_touch=True)
  errors=[];bad=[];page.on('pageerror',lambda e:errors.append(str(e)))
  page.on('response',lambda r:bad.append(str(r.status)+' '+r.url) if r.status>=400 else None)
- page.goto('http://127.0.0.1:8793',wait_until='networkidle');page.evaluate('document.fonts.ready')
+ page.goto(os.environ.get('GAME_TEST_URL','http://127.0.0.1:8793/'),wait_until='networkidle');page.evaluate('document.fonts.ready')
  assert page.locator('[data-intro]').count()==2
- record('homepage has exactly two games')
+ home_text=page.locator('body').inner_text()
+ assert all(text not in home_text for text in ['小島中文','小島生活任務','小島句子列車'])
+ assert '小島中文' not in page.title()
+ typography=page.locator('body').evaluate('(el)=>({weight:getComputedStyle(el).fontWeight,stroke:getComputedStyle(el).webkitTextStrokeWidth,family:getComputedStyle(el).fontFamily})')
+ assert int(typography['weight'])>=900 and float(typography['stroke'].removesuffix('px'))>=.3
+ assert '標楷體' in typography['family'] or 'EducationKai' in typography['family']
+ assert 'home-island-background-v1.png' in page.locator('body').evaluate('(el)=>getComputedStyle(el).backgroundImage')
+ record('homepage has two picture entrances, requested text removed, illustrated background and bold Kai')
  page.screenshot(path=str(OUT/'home-1280.png'))
  # Playback is explicitly muted because production voice generation has separate readiness checks.
  page.locator('[data-action="sound"]').click()
@@ -131,7 +138,7 @@ with sync_playwright() as p:
  # Direct review access from introductions and active rounds.
  for kind in ['life','train']:
   home(page);page.locator(f'[data-intro="{kind}"]').click();page.locator('button[data-action="review"]').first.click();assert page.locator('.review-card').count()==len(DATA[kind])
-  page.locator('[data-action="start"]').click();page.locator('button[data-action="review"]').first.click();assert page.locator('.review-card').count()==len(DATA[kind])
+  page.locator('[data-action="restart"]').click();page.locator('button[data-action="review"]').first.click();assert page.locator('.review-card').count()==len(DATA[kind])
  record('complete reviews accessible from both intro and play')
  assert errors==[],errors;assert bad==[],bad
  record('no browser exceptions or failed local assets')

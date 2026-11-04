@@ -1,4 +1,4 @@
-# 「……只有……，才……。」小島中文遊戲
+# 「……只有……，才……。」中文句式遊戲
 
 香港小學二年級、語文能力較弱及非華語學生的雙人電子白板教材。專案：<https://github.com/angusQAQ/zhi-you-cai-game>。
 
@@ -61,3 +61,11 @@ npm run check:release
 - [references/sources.md](references/sources.md)：程式與共用素材來源。
 
 本輪只製作網頁版，沒有離線 HTML 匯出、下載發佈、登入、資料庫或排行榜。
+
+## 本輪介面更新
+
+兩款遊戲的版面直接沿用「一……就……」對應的小島遊戲：原始樣式完整保存在 `dist/reference-ui.css`，新句式需要的左右關係空框、只有／才詞卡及雙人流程由 `dist/style.css` 配合。沒有變更 10+5 題題庫或 78 段配音。
+
+首頁改為水彩海島背景、兩個圖像入口及開始按鈕，不再顯示「小島中文」「小島生活任務」「小島句子列車」三段名稱；介紹及遊玩畫面保留對應遊戲標題。漢字採原版粗體標楷體設定，字型檔不改動，詞卡粵拼維持 Times New Roman。
+
+參考版本、樣式雜湊與適配範圍見 `references/ui-reference-manifest.json`；10 項主要版面幾何對照及新畫面證據見 `evidence/ui-reference-layout-comparison.json`、`evidence/ui-*.png`。
