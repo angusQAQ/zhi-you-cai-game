@@ -27,4 +27,6 @@
 
 GitHub runner 的原生音訊測試另發現固定 sleep 對較慢環境不足；保留「不能提早換題」斷言，將完成檢查改為等待實際題號／音訊狀態。再次在雲端重跑後，接續執行 Actions。
 
-GitHub Pages 部署及正式網址的實際驗證紀錄會在首次成功部署後補上；此段不代表網站已上線。
+**GitHub Pages 已成功部署。** 首次成功執行：[Actions 41760276258](https://github.com/angusQAQ/zhi-you-cai-game/actions/runs/41760276258)，部署提交 `d1f1310b750a083796272bb25ffe51c71d390437`。正式網址 https://angusqaq.github.io/zhi-you-cai-game/ 已實際請求並確認 HTTP 200。
+
+正式網址的瀏覽器、真實音訊與截圖複查交由 `.github/workflows/verify-live.yml` 執行，使用 GitHub runner 的既有公開網站憑證信任，不修改雲端瀏覽器的共用信任設定。結果及關鍵畫面保存在該 Actions 執行的 `live-website-evidence` artifact。

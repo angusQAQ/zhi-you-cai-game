@@ -1,0 +1,30 @@
+name: Verify live game website
+on:
+  workflow_dispatch:
+  deployment_status:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/verify-live.yml']
+permissions:
+  contents: read
+jobs:
+  browser:
+    if: github.event_name != 'deployment_status' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install playwright==1.62.0
+      - run: python -m playwright install --with-deps chromium
+      - name: Open and play the published games with real narration
+        run: python tests/production_audio.py --base-url https://angusqaq.github.io/zhi-you-cai-game/ --output evidence/live-production-audio-results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-website-evidence
+          path: |
+            evidence/live-production-audio-results.json
+            evidence/live-*.png
