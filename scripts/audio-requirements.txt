@@ -1,1 +1,2 @@
-edge-tts==7.2.7
+edge-tts==7.3.1
+truststore==0.10.5

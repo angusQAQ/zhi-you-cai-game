@@ -2,7 +2,7 @@
 
 香港小學二年級、語文能力較弱及非華語學生的雙人電子白板教材。專案：<https://github.com/angusQAQ/zhi-you-cai-game>。
 
-**目前為製作版本，尚未交付正式網址。** 程式及彩繪圖已完成本機雲端驗證；78 段香港粵語預錄音尚未生成，另有 75 個字待中大字庫核查。雲端網路政策目前拒絕相關服務與 GitHub API。發布檢查會阻止缺少配音／核查資料的版本部署。`https://angusqaq.github.io/zhi-you-cai-game/` 只是預期路徑，未經實際部署及開啟確認，不能視為交付連結。
+固定網址的部署目標為 **https://angusqaq.github.io/zhi-you-cai-game/**。78 段香港粵語預錄音及 111 個字的粵拼核查已備妥，正式發布檢查已通過；首次 Pages 部署需先在 [GitHub Pages 設定](https://github.com/angusQAQ/zhi-you-cai-game/settings/pages) 將 **Build and deployment → Source** 設為 **GitHub Actions**。目前的 GitHub App 連線不具備首次啟用 Pages 所需的權限；完成一次設定後，後續正常提交會自動檢查並更新同一固定網址。正式網址仍須在部署成功後實際驗證。
 
 ## 內容
 
@@ -34,7 +34,7 @@ python3 tests/audio_browser.py
 
 診斷證據與具體解決步驟見 [references/network-diagnosis.md](references/network-diagnosis.md)。可執行 `npm run check:network` 區分代理阻擋、TLS 問題與已連到遠端但尚未驗證授權；此指令不修改網路規則。
 
-先在環境設定套用已儲存的四個必要網域：`humanum.arts.cuhk.edu.hk`、`speech.platform.bing.com`、`api.github.com`、`angusqaq.github.io`。這是網路需求，不需在聊天中提供密鑰。
+製作音檔或重新核查字音時，環境需能存取以下四個網域：`humanum.arts.cuhk.edu.hk`、`speech.platform.bing.com`、`api.github.com`、`angusqaq.github.io`。遊玩時只讀取網站已部署的靜態素材，不會即時呼叫配音或字庫服務。
 
 ```sh
 python3 -m venv .venv

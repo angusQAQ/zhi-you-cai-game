@@ -22,6 +22,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/check_assets.py
+      - name: Install audio test tools
+        run: sudo apt-get update && sudo apt-get install --yes --no-install-recommends ffmpeg
       - run: pip install playwright==1.62.0
       - run: python -m playwright install --with-deps chromium
       - name: Browser operations at both whiteboard sizes
@@ -33,26 +35,17 @@ jobs:
           done
           python tests/browser.py
           python tests/audio_browser.py
+          python tests/production_audio.py
+      - name: Verify production release assets
+        run: npm run check:release
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: browser-evidence
           path: evidence/
-  release-readiness:
-    needs: check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: npm run check:release
   deploy:
     if: github.event_name != 'pull_request'
-    needs: release-readiness
+    needs: check
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -64,8 +57,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

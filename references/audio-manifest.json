@@ -1,0 +1,626 @@
+{
+  "zyc-v1-word-b4ffef701723": {
+    "text": "刷牙",
+    "file": "assets/audio/zyc-v1-word-b4ffef701723.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "8e473837e81b099f7ee07732dab600a475c9ef3f1966090406fa743ade30e2cf",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-2834161fcf62": {
+    "text": "拍球",
+    "file": "assets/audio/zyc-v1-word-2834161fcf62.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "fad470f3554239ba3b7f6e15879702e1c929797c6019cef92de9d36baf05509e",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-874af2bf6005": {
+    "text": "打開水樽蓋",
+    "file": "assets/audio/zyc-v1-word-874af2bf6005.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.376,
+    "sha256": "6b26cd94af153049869a01be165b9f5e18f3e768b365a1f4f179fb0327d835f8",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-1f6a7f36d6b9": {
+    "text": "小明只有打開水樽蓋，才可以喝水。",
+    "file": "assets/audio/zyc-v1-sentence-1f6a7f36d6b9.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.632,
+    "sha256": "5e4ae5f739b0d9d45275a491eb5ac5b46b4cbea076d8593fe5a72805a9ea7202",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-6b3d7eba4410": {
+    "text": "小明只有……，才可以喝水。",
+    "file": "assets/audio/zyc-v1-question-6b3d7eba4410.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 3.768,
+    "sha256": "4f16fe4b23015fb1d32e63693631a24d2c3f8f5ab536d6dd1f20319aa70f2263",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-de919311adf8": {
+    "text": "洗手",
+    "file": "assets/audio/zyc-v1-word-de919311adf8.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "0e33da91a4fdbc6b586305f036a1cfce8d09034de31bf7c5a7709112319ea95b",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-6320b818bdf7": {
+    "text": "跳繩",
+    "file": "assets/audio/zyc-v1-word-6320b818bdf7.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "bd51cd8fc4ed0eacb5db44b59edfb1c9ca4f1099066bab06567fb769bb2a38f0",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-cd64301f6c9f": {
+    "text": "打開書包",
+    "file": "assets/audio/zyc-v1-word-cd64301f6c9f.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.136,
+    "sha256": "754ce038279db8e794af5d1095068c2fec2bc533dd952f1b03def2d087ccd317",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-4e1c7c5dc71e": {
+    "text": "小美只有打開書包，才可以拿出課本。",
+    "file": "assets/audio/zyc-v1-sentence-4e1c7c5dc71e.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.872,
+    "sha256": "bb8737de5bdf5b612e69ceec43d3586994a1acf6a0a6cf7926ff92ca517dc2f4",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-818aa187b42e": {
+    "text": "小美只有……，才可以拿出課本。",
+    "file": "assets/audio/zyc-v1-question-818aa187b42e.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.224,
+    "sha256": "e8348b9e98ebc95d616524d6b83f72317c8edcf02006d450eda763f28949188c",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-58476ef7cca0": {
+    "text": "畫畫",
+    "file": "assets/audio/zyc-v1-word-58476ef7cca0.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "45d2d7d7bf59a611724ff72fb34fbb38d24f86ab695173ff498b312be4f4118e",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-07fb68a19df0": {
+    "text": "踢球",
+    "file": "assets/audio/zyc-v1-word-07fb68a19df0.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "fd97b90795ab46df1111db0abc227de9624258b7c84de4ccb49e1c67f8880b6f",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-316c6c76e382": {
+    "text": "打開水龍頭",
+    "file": "assets/audio/zyc-v1-word-316c6c76e382.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.4,
+    "sha256": "fa6d92b2b1b45d346b06521bf52d01b24e4735f3ff2f720f3b6b7906d2e01a80",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-153087f3f440": {
+    "text": "我只有打開水龍頭，才可以洗手。",
+    "file": "assets/audio/zyc-v1-sentence-153087f3f440.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.416,
+    "sha256": "7381189e9d0a98f84a32c0c331257b4b533a0f1463cf2831b6a140ed2a2b77e2",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-92e577839e0b": {
+    "text": "我只有……，才可以洗手。",
+    "file": "assets/audio/zyc-v1-question-92e577839e0b.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 3.504,
+    "sha256": "9caec7d2ae7231afce20a6b72d6321c6e0d5e0c2b91a8bb80b133838e160440b",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-797e5efcdf2e": {
+    "text": "梳頭",
+    "file": "assets/audio/zyc-v1-word-797e5efcdf2e.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "79db53215d8df83b1b537e3138001d2e5bd331b666d39d156c5aedc5e280407f",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-e96af342f3d1": {
+    "text": "掃地",
+    "file": "assets/audio/zyc-v1-word-e96af342f3d1.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "4b231fcf7c949015f25eff49d91e57eba392a98a60525b822fb82a8d91f9a19a",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-891542956644": {
+    "text": "拿出車票",
+    "file": "assets/audio/zyc-v1-word-891542956644.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.184,
+    "sha256": "32b4bed43ab2ad4c4ed3c91f93ee05287250a50e269bfadb03010df9946e7d47",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-73d6ebb86cd0": {
+    "text": "我們只有拿出車票，才可以坐火車。",
+    "file": "assets/audio/zyc-v1-sentence-73d6ebb86cd0.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.512,
+    "sha256": "355729706141061549c004e53a8e6e65bfb73a1a7624aa76ae1de0f8ec7f6283",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-08c82042d89d": {
+    "text": "我們只有……，才可以坐火車。",
+    "file": "assets/audio/zyc-v1-question-08c82042d89d.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 3.864,
+    "sha256": "b6e6e12b07a1d28ea8e809519145fe98a26a4cc794bba7da56e93f02c6634e89",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-0e6c9e031ae6": {
+    "text": "吃雪糕",
+    "file": "assets/audio/zyc-v1-word-0e6c9e031ae6.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.92,
+    "sha256": "e5c831c314b5ef846163d6fd63107735beaaa99f90ed48cc5a6b8c3193a90481",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-bad5a6f6e654": {
+    "text": "畫圖畫",
+    "file": "assets/audio/zyc-v1-word-bad5a6f6e654.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.04,
+    "sha256": "11be0f6128a5df377c36d745384e25ef18870191cf17aa2a1833546bfe6cc62f",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-95d3e6181be8": {
+    "text": "排好隊",
+    "file": "assets/audio/zyc-v1-word-95d3e6181be8.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.944,
+    "sha256": "394c3caa3aeb175abcf9d53021fff6c1a6241bae490a3695890279007ff3b8b2",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-951af72ed91a": {
+    "text": "小朋友只有排好隊，才可以上校巴。",
+    "file": "assets/audio/zyc-v1-sentence-951af72ed91a.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.704,
+    "sha256": "8d59640c7e68b0cb09985bccf3264cec6b0c5a2a5260ed6065e3cf9853bed414",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-35bd921ae2b0": {
+    "text": "小朋友只有……，才可以上校巴。",
+    "file": "assets/audio/zyc-v1-question-35bd921ae2b0.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.224,
+    "sha256": "df795b19303ab56a937ff83e9921abf4794fad20a7e7041614f5196c66be5a4f",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-80f4cc39c4c1": {
+    "text": "可以踢球",
+    "file": "assets/audio/zyc-v1-word-80f4cc39c4c1.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.16,
+    "sha256": "3308298872f63950db35205cb423f5803ac9a77db88ef4bbf317055ea8e91df6",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-706c96c06d5f": {
+    "text": "可以吃香蕉",
+    "file": "assets/audio/zyc-v1-word-706c96c06d5f.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.448,
+    "sha256": "e8afdb6e10d6786f8e4e8e04bce821dbf85d7f01b0b1b44aa7685037e8fb11a1",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-e06d2adab759": {
+    "text": "可以開燈",
+    "file": "assets/audio/zyc-v1-word-e06d2adab759.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.208,
+    "sha256": "3b4e3716272bd536995fa75bd173a7156779796083bda2d226caebee19fc3a53",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-eceb172a58c6": {
+    "text": "小明只有按下開關，才可以開燈。",
+    "file": "assets/audio/zyc-v1-sentence-eceb172a58c6.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.56,
+    "sha256": "68b53f71a38e882c67248f280c5851585503cabd88620d5ca07b16e123d2acfc",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-b87122169298": {
+    "text": "小明只有按下開關，才……。",
+    "file": "assets/audio/zyc-v1-question-b87122169298.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.296,
+    "sha256": "8450f0c2450823e6b8b9459c57cbec0fc6e23a379f7e2a1d05f214d57ae6a1c3",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-8a97c342d8bf": {
+    "text": "可以跳繩",
+    "file": "assets/audio/zyc-v1-word-8a97c342d8bf.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.232,
+    "sha256": "f181ee0ebf25479f213495f1ee9e3d59660403a842ea8cd6c3b34cf49cf51f6f",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-0de6800b7751": {
+    "text": "可以梳頭",
+    "file": "assets/audio/zyc-v1-word-0de6800b7751.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.16,
+    "sha256": "6003627b3462a5b467e899b2c102b9ddffc95879c11dbfe713480cdbe568ef83",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-22989584f2ea": {
+    "text": "可以拿出牛奶",
+    "file": "assets/audio/zyc-v1-word-22989584f2ea.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.592,
+    "sha256": "5a50405381b38bbd700e461c7d8c7b87b4d126786c5d01051eb76aacfd7f71b9",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-8231629cbe65": {
+    "text": "小美只有打開雪櫃門，才可以拿出牛奶。",
+    "file": "assets/audio/zyc-v1-sentence-8231629cbe65.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 5.088,
+    "sha256": "9219d77ea720b231dbc08d0b78aa83f8b569b2fbc5922c6850f6f1e8052f1fcd",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-0c6e2be3b5d5": {
+    "text": "小美只有打開雪櫃門，才……。",
+    "file": "assets/audio/zyc-v1-question-0c6e2be3b5d5.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.416,
+    "sha256": "6600500e3f5715f7d5bdbd240a3890842f0ea27f257984c32ddce05d4dc61c7c",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-51a92ad624f6": {
+    "text": "可以游泳",
+    "file": "assets/audio/zyc-v1-word-51a92ad624f6.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.16,
+    "sha256": "057bdf2af7ed20e082929484fbbedcd0981d89a33f87ecd3dba069fa59b8fbee",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-8dbf37408438": {
+    "text": "可以吃西瓜",
+    "file": "assets/audio/zyc-v1-word-8dbf37408438.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.4,
+    "sha256": "5de243256b43bd7489ecdb40b6b5c15880a92fa28f8383ce18baa4f7f3c6cb83",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-a581c66c9507": {
+    "text": "可以拿出橡皮擦",
+    "file": "assets/audio/zyc-v1-word-a581c66c9507.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.808,
+    "sha256": "f6154e58767187cde0a72cde40045407863cc175ad5c661d7fd45c180fc7b25c",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-90f4078435b4": {
+    "text": "我只有打開筆袋，才可以拿出橡皮擦。",
+    "file": "assets/audio/zyc-v1-sentence-90f4078435b4.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.656,
+    "sha256": "91d8ca7ed59a8864cfdcf0e9e802652426d5f6f7e55619ac77a43cabe4843f05",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-35ce72619a23": {
+    "text": "我只有打開筆袋，才……。",
+    "file": "assets/audio/zyc-v1-question-35ce72619a23.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 3.84,
+    "sha256": "dee6b34c36e99a48c3e4dc6b5e4ba1aa1485b41b7a298f53dbfe7b00c3612f6d",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-5e078dd4344b": {
+    "text": "可以洗臉",
+    "file": "assets/audio/zyc-v1-word-5e078dd4344b.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.28,
+    "sha256": "fbdbb384193d3d0dca293c15f0c990c24f00f2d2ab64da0a14d0abf0f792279d",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-336de6cd2b98": {
+    "text": "可以踢足球",
+    "file": "assets/audio/zyc-v1-word-336de6cd2b98.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.328,
+    "sha256": "53a9ccb00ad6cda4422732381eb56750df1856ba9ed5ad9a3a7182633c9d4044",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-98ec515fd6d2": {
+    "text": "可以寄出這封信",
+    "file": "assets/audio/zyc-v1-word-98ec515fd6d2.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.808,
+    "sha256": "a698c2b0a5d2b26042d5f192c91f2c9fdea273679347db3fffa0785be92018ae",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-abe56d71001b": {
+    "text": "小明只有貼上郵票，才可以寄出這封信。",
+    "file": "assets/audio/zyc-v1-sentence-abe56d71001b.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 5.112,
+    "sha256": "0bd507994f815e4461f5fe88ba3c0d9af1d4558abf1f3e4a5ee0c8268a4789e2",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-1e0bc33e8d0e": {
+    "text": "小明只有貼上郵票，才……。",
+    "file": "assets/audio/zyc-v1-question-1e0bc33e8d0e.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.296,
+    "sha256": "66389647a521c5787ca7e227a2ca973c86984defdb057a25158bf3f32180091c",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-842523e23c8d": {
+    "text": "可以刷牙",
+    "file": "assets/audio/zyc-v1-word-842523e23c8d.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.184,
+    "sha256": "709308e7fa79709b0ad17d033e8a27c9d7d79852e3325f0f0122aa904999d468",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-06efca4214be": {
+    "text": "可以吃餅乾",
+    "file": "assets/audio/zyc-v1-word-06efca4214be.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.496,
+    "sha256": "4384ddcd3bbd469e772e5583cfde74fd46df86e9ed5f8ae33804a797b9f87e71",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-ff7d69828d91": {
+    "text": "可以叫來升降機",
+    "file": "assets/audio/zyc-v1-word-ff7d69828d91.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.832,
+    "sha256": "3459df4e276e1aa1d02d70a0c1364a6baf2fd019249a8b37f081461a748ca6ae",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-14cf320344bf": {
+    "text": "小美只有按下按鈕，才可以叫來升降機。",
+    "file": "assets/audio/zyc-v1-sentence-14cf320344bf.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.992,
+    "sha256": "edf9cd3ab8208d854c327d92e4d00b071d63300296813ce3288e4989c9c49f2d",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-question-e24a20292085": {
+    "text": "小美只有按下按鈕，才……。",
+    "file": "assets/audio/zyc-v1-question-e24a20292085.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.224,
+    "sha256": "3ed18f3a31cdeeeb8656120184ea6f2b077f5efc0b336c34329241674a10dfe9",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-b70bb4acc048": {
+    "text": "我",
+    "file": "assets/audio/zyc-v1-word-b70bb4acc048.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "9948b5f642d08d92e89086e6fc6f6ed6bc551ed3122c694add9a19eba6073479",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-ba8bd7c8c974": {
+    "text": "只有",
+    "file": "assets/audio/zyc-v1-word-ba8bd7c8c974.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "bd0618293b3e030099791efedc1fec713fb807e338f91c49dd9407d9e6ed8923",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-e60543375cb9": {
+    "text": "打開盒蓋",
+    "file": "assets/audio/zyc-v1-word-e60543375cb9.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.136,
+    "sha256": "bafef184da1e90ec6b08d2027a02d5de24c056a163f7300bf21dc63bec4f9610",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-b6011fd58387": {
+    "text": "逗號",
+    "file": "assets/audio/zyc-v1-word-b6011fd58387.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "074e069fbb83111cb10e2d8b1a50c77d81c6c04f54b9945458d2f3b228789d05",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-9a8d951dcb60": {
+    "text": "才",
+    "file": "assets/audio/zyc-v1-word-9a8d951dcb60.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "2dc751b371896580a9e05fbe4565280239fe19ef538f3965bc8a9993e1812dcf",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-f9cb4b45994e": {
+    "text": "可以拿出",
+    "file": "assets/audio/zyc-v1-word-f9cb4b45994e.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.088,
+    "sha256": "b645654a10b46bcd4bd1646557c022cef5f074b6cb476a63ddfbf90c3c671bb0",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-0c34adc9460a": {
+    "text": "盒內的餅乾",
+    "file": "assets/audio/zyc-v1-word-0c34adc9460a.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.424,
+    "sha256": "891b081b3d1a2e0e60ca14860831547a3de5655a6e4db7f0c6199f4dd454ba20",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-351dcac4facb": {
+    "text": "句號",
+    "file": "assets/audio/zyc-v1-word-351dcac4facb.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "80fef0bf05e736c882275105e48536c36c5add1f4ff0c355d543827d0561a37c",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-861286ec192c": {
+    "text": "我只有打開盒蓋，才可以拿出盒內的餅乾。",
+    "file": "assets/audio/zyc-v1-sentence-861286ec192c.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 5.136,
+    "sha256": "5523840d2ef749ef46b85a20adb4b3eaea086cf49e63eb05a0165eb8f6d2e97c",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-b91f367c5690": {
+    "text": "雨傘",
+    "file": "assets/audio/zyc-v1-word-b91f367c5690.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "a6b13bd8f12928dbe30845487a427d1488747562251ae8de7ce4f1ede6552f05",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-d57366ca4f4f": {
+    "text": "打開",
+    "file": "assets/audio/zyc-v1-word-d57366ca4f4f.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "51a462e20016e1dd7b862c6b978945f18ddb33e89ef0d447dd288672df9a42e5",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-8299c1d369b4": {
+    "text": "可以擋雨",
+    "file": "assets/audio/zyc-v1-word-8299c1d369b4.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.16,
+    "sha256": "3943afaba04805e11441b682726ab8a9c53fbd5781898baf2ad36556f9543ba5",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-eebe3a8e0011": {
+    "text": "雨傘只有打開，才可以擋雨。",
+    "file": "assets/audio/zyc-v1-sentence-eebe3a8e0011.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 3.936,
+    "sha256": "559091f2bb1e3207293596dfd6f708abf1e0c73e71aa2a6b73f7c4f7d13e72bf",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-df3ea25a4369": {
+    "text": "小明",
+    "file": "assets/audio/zyc-v1-word-df3ea25a4369.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "dfd7b30bc84c81cafea80a26270568ac6450d9c42980e3195890a296c32a8ab9",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-8a3aa156426f": {
+    "text": "膠水蓋",
+    "file": "assets/audio/zyc-v1-word-8a3aa156426f.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.968,
+    "sha256": "a0cdc98db3b3705fc3d6bfd94ab4c105f994af75b62757dc312a3fec99b423ef",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-4530617b10d4": {
+    "text": "可以塗膠水",
+    "file": "assets/audio/zyc-v1-word-4530617b10d4.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.448,
+    "sha256": "e7446204f654181b557bf89d215b69fe609d5bfb20d93f752831d0bd2b224109",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-ff05b1b69160": {
+    "text": "小明只有打開膠水蓋，才可以塗膠水。",
+    "file": "assets/audio/zyc-v1-sentence-ff05b1b69160.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.92,
+    "sha256": "4ac1f38e51e8995421cb311a3a32978928b636316fc3aebe5005af87c1259aca",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-bd0bb89a4d9f": {
+    "text": "投入硬幣",
+    "file": "assets/audio/zyc-v1-word-bd0bb89a4d9f.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.184,
+    "sha256": "60a12a3c621e4afcf2166720858f2d33ec05a0539ace074440be6db3141b3623",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-89625d7d9e48": {
+    "text": "可以買到",
+    "file": "assets/audio/zyc-v1-word-89625d7d9e48.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.16,
+    "sha256": "fd2c2ed2bc52d473b9e68990868813f3c6d7723546499aa95cff7fef9274de8f",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-64c25f038caa": {
+    "text": "果汁",
+    "file": "assets/audio/zyc-v1-word-64c25f038caa.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "ec2a02a46cec82cc912e97bafe4fb8a467575e5d6075627204a765b751987d85",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-10d6b315f174": {
+    "text": "我只有投入硬幣，才可以買到果汁。",
+    "file": "assets/audio/zyc-v1-sentence-10d6b315f174.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.368,
+    "sha256": "02059bf02ed11c8a5f58a4a68412d38f8ddee79e07694f6e870526266098846f",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-142272c44dc7": {
+    "text": "小花",
+    "file": "assets/audio/zyc-v1-word-142272c44dc7.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.872,
+    "sha256": "e218e757b3a0d62e712a30d092136dd35fa2ed83a61bc9a1fcaad6ea03b8b3a9",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-504a83a84481": {
+    "text": "得到水分",
+    "file": "assets/audio/zyc-v1-word-504a83a84481.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.184,
+    "sha256": "2da9140146d511b294d4f295024b58e10df9ddbc16d1bf5da7679c1cb649db29",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-7ae86f47ad3c": {
+    "text": "可以繼續",
+    "file": "assets/audio/zyc-v1-word-7ae86f47ad3c.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.992,
+    "sha256": "f7672a032afca1e21691294b923a52efdad43510df3bed6a6c4644d554f765aa",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-word-dc8937308c98": {
+    "text": "生長",
+    "file": "assets/audio/zyc-v1-word-dc8937308c98.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.896,
+    "sha256": "1789127caf0fbc9c6376d157d691bec5c6f3b0e9d8be8b2ad172b4e602944378",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-sentence-058558b78a9d": {
+    "text": "小花只有得到水分，才可以繼續生長。",
+    "file": "assets/audio/zyc-v1-sentence-058558b78a9d.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 4.8,
+    "sha256": "425249b332a6fe5722553b19bf2292d1181cc9a05e9e0ee6b7dd0baf4cd90f99",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-feedback-2489db7a6bae": {
+    "text": "再試一試。",
+    "file": "assets/audio/zyc-v1-feedback-2489db7a6bae.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 2.136,
+    "sha256": "bb2d0bcf0bd13e2282750a725d334851416370f007fd46b376bcc145ce1dea78",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  },
+  "zyc-v1-feedback-97c6bbf85445": {
+    "text": "答對了！",
+    "file": "assets/audio/zyc-v1-feedback-97c6bbf85445.mp3",
+    "voice": "zh-HK-HiuMaanNeural",
+    "duration": 1.944,
+    "sha256": "083a86936ab80f622098bc1e6878609b86a32697ca28bf4fdce59d342a6a050e",
+    "provider": "Microsoft Edge Read Aloud; not CUHK recordings"
+  }
+}

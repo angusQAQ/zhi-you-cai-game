@@ -15,4 +15,6 @@
 
 水樽圖曾重製以移除生成器加入的數字、回復正確圖集比例；書包圖移除桌上另一課本；校巴圖移除重複的已上車人物；果汁圖修正硬幣與投幣口的接觸方向。鑰匙題依使用者要求完全移除，未隨網站發布。
 
-粵語音檔規劃採 Microsoft Edge Read Aloud 的 `zh-HK-HiuMaanNeural`，並非香港中文大學錄音。尚未生成的音檔不列為存在、不以其他句子的舊錄音代替。
+粵語音檔規劃採 Microsoft Edge Read Aloud 的 `zh-HK-HiuMaanNeural`，並非香港中文大學錄音。本次 78 段配音均已生成，音檔文字、識別名稱、時長及 SHA-256 保存在 `references/audio-manifest.json`。
+
+本輪部署核查補記：「袋」的中大本字讀音列為 `doi6`，詞例包括布袋、手袋，並列出「筆」為配搭點；原暫訂 `doi2` 已改按本字讀音記錄。學生畫面仍顯示無聲調 `doi`。證據見 `references/cuhk-pages/888b.html`。
